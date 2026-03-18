@@ -23,7 +23,10 @@ type RawCsvRow = {
   longitude?: string;
 };
 
-const DEFAULT_CSV_PATH = "/crawling-data/seoul-accomodations/20260318-212418-with-latlng.csv";
+const DEFAULT_CSV_PATH = new URL(
+  "../crawling-data/seoul-accomodations/20260318-212418-with-latlng.csv",
+  import.meta.url
+).href;
 const SEOUL_CENTER = { lat: 37.5665, lng: 126.978 };
 const DEFAULT_LEVEL = 8;
 const KAKAO_APP_KEY = "bfa2d9d5c5b90ac2beca52007d6809ea";
