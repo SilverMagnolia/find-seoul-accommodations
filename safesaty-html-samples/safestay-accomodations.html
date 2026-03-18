@@ -1,0 +1,1654 @@
+
+
+
+
+
+<html lang="ko">
+
+<!-- Google tag (gtag.js) -->
+<script async src = "https://www.googletagmanager.com/gtag/js?id=G-MYLP093NHH"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+		
+	gtag('config', 'G-MYLP093NHH');
+</script>
+
+<script type = "application/id+json">
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"name": "한국관광공사 세이프스테이",
+	"sameAs": [
+		"https://www.instagram.com/safestay_kor/"
+	]
+}
+</script>
+
+
+
+
+
+
+
+<head>
+	<title>한국관광공사 세이프스테이</title>
+	<meta charset="UTF-8">
+	<meta name="naver-site-verification" content="7f72e3fc2cd6f383d31645a536d4042312edea8f">
+	<meta http-equiv="content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="description" content=" 믿을 수 있는 민박을 만들기 위한 세이프스테이 캠페인에 동참해주세요!">
+	<meta property="og:type" content="safestay.visitkorea.or.kr">
+	<meta property="og:title" content="한국관광공사 세이프스테이">
+	<meta property="og:description" content="믿을 수 있는 민박을 만들기 위한 세이프스테이 캠페인에 동참해주세요!">
+	<meta property="og:image" content="/usr/images/logo_goStay.png">
+	<meta property="og:url" content="http://safestay.visitkorea.or.kr/usr/main/mainSelectList.kto">
+	<link rel="icon" href="/usr/images/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+	<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+	<link href="" rel="icon" type="image/jpg">
+	<link href="" rel="shortcut icon" type="image/jpg">
+	<link href="" rel="apple-touch-icon" type="image/jpg">				
+	<link rel="stylesheet" type="text/css" href="/usr/css/swiper.min.css"> 
+	<link rel="stylesheet" type="text/css" href="/usr/css/base.css"> 
+	<link rel="stylesheet" type="text/css" href="/usr/css/grid.css"> 
+	<link rel="stylesheet" type="text/css" href="/usr/css/common.css?a=2">
+	<!-- Global site tag (gtag.js) - Google Analytics --> 
+	<script async src=" https://www.googletagmanager.com/gtag/js?id=UA-154933681-3"></script>  
+	<script src="/usr/js/jquery-1.12.4.js"></script>
+	<script src="/usr/js/swiper.min.js"></script>	
+	<script src="/usr/js/common.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="/usr/css/ui.datepicker.css"/>
+	<script type="text/javaScript" src="/usr/js/cal/ui.datepicker-ko.js"></script>
+	<script type="text/javascript" src="/usr/js/cal/jquery-ui-1.10.1.min.js"></script><!-- datepicker 용도로 추가 -->
+	
+</head>
+
+<script type="text/javaScript">
+
+/**[페이지 공통] 인쇄**/
+function fnPrint(){
+	var bTopPopupAreaDisplay = false;
+	if( $("#top-popup-area").length > 0 ){
+		if( $("#top-popup-area").css("display") == "none" ){
+			bTopPopupAreaDisplay = false;
+		}else{
+			bTopPopupAreaDisplay = true;
+		}
+		$("#top-popup-area").hide();
+	}
+	window.print();
+	if( bTopPopupAreaDisplay ){
+		$("#top-popup-area").show();
+	}else{
+		$("#top-popup-area").hide();
+	}
+}
+
+//광역 시군구
+function fnSearchLodgeSidoCd(){
+	var url = "/common/code/midCodeSelectListAjax.kto";
+	var params = {"lcdSn":41};
+	
+	$.post(url, params, function(data) {
+		if(data.result == "Y"){
+			var out = "";
+			if(data.midCodeList.length > 0){
+				out += "<dd><a href="+"javascript:fnClearLodgeCd();"+">"+'전체'+"</a></dd>";
+				for(var i=0;i<data.midCodeList.length;i++){
+					out += "<dd><a href="+"javascript:fnSearchLodgeGugunCd('"+data.midCodeList[i].mcdVal+"','"+'Y'+"','"+ data.midCodeList[i].mcdNm+ "','"+'N'+ "');"+">"+data.midCodeList[i].mcdNm+"</a></dd>";
+				}
+				//alert(out);
+				$("#LodgeSidoCd").html(out);
+				
+			}			
+		}
+	}, "JSON");
+
+}
+
+//지역 시군구
+function fnSearchLodgeGugunCd(mcdVal, clean, nm, map){
+	if(clean == "Y"){
+		fnClearLodgeGugunCd();
+		if(nm != ""){
+			$("#lodgeSidoCdNm").val(nm);
+		}
+		if(map == "Y"){
+			var pOut = "";
+			pOut += "<p>"+nm+"</p>"
+			$("#LodgeSidoCdText").html(pOut);
+		}
+	}
+	$("#searchLodgeSidoCd").val(mcdVal);	
+	var url = "/common/code/codeMcdValSelectListAjax.kto";
+	var params = {"mcdVal":mcdVal};	
+	$.post(url, params, function(data) {
+		if(data.result == "Y"){
+			var out = "";
+			if(data.codeList.length > 0){
+				out += "<dd><a href="+"javascript:fnSaveLodgeGugunCd();"+">"+'전체'+"</a></dd>";
+				for(var i=0;i<data.codeList.length;i++){
+					out += "<dd><a href="+"javascript:fnSaveLodgeGugunCd('"+data.codeList[i].cdVal+"','"+ data.codeList[i].cdNm+ "');"+">"+data.codeList[i].cdNm+"</a></dd>";
+				}
+				$("#lodgeGugunCd").html(out);
+			}			
+		}
+	}, "JSON");
+}
+
+//광역 시군구 전체 클릭 시 광역,지역 데이터 초기화
+function fnClearLodgeCd(){
+	var out = "";
+	out += "<dd><a>"+'전체'+"</a></dd>";
+	$("#lodgeGugunCd").html(out);
+	
+	var pOut = "";
+	pOut += "<p>"+'전체'+"</p>"	
+	$("#lodgeGugunCdText").html(pOut);	
+	
+	$("#searchLodgeSidoCd").val('');
+	$("#lodgeSidoCdNm").val('');
+	$("#searchLodgeGugunCd").val('');
+	$("#lodgeGugunCdNm").val('');
+}
+
+//지역 데이터 초기화
+function fnClearLodgeGugunCd(){
+	var pOut = "";
+	pOut += "<p>"+'전체'+"</p>"	
+	$("#lodgeGugunCdText").html(pOut);	
+	
+	$("#searchLodgeGugunCd").val('');
+	$("#lodgeGugunCdNm").val('');
+}
+
+//지역 시군구 데이터 저장
+function fnSaveLodgeGugunCd(data, nm){
+	$("#searchLodgeGugunCd").val(data);
+	$("#lodgeGugunCdNm").val(nm);
+}
+
+/**
+ * 시도 줄임말 REPLACE
+ */
+function fnCommonReplaceLocaleName(str){
+	var returnResult = "";
+	if( str != null && str != "" && str != undefined ){
+		if( str.indexOf("남도") > -1 ){
+			returnResult = fnCommonBiteSubstring(str,2);
+			returnResult += "남";
+		}else if( str.indexOf("북도") > -1 ){
+			returnResult = fnCommonBiteSubstring(str,2);
+			returnResult += "북";
+		}else{
+			returnResult = fnCommonBiteSubstring(str,4);
+		}
+	}
+	return returnResult;
+}
+/**
+ * 한글 Substring
+ */
+function fnCommonBiteSubstring(str,len){
+	var str = str;
+	var l = 0;
+	for( var i=0; i<str.length; i++ ){
+        l += (str.charCodeAt(i) > 128) ? 2 : 1;
+        if( l > len ) return str.substring(0,i);
+    }
+	return str;
+}
+</script>
+
+<script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=5ntmu5t7mx&submodules=geocoder"></script>
+
+<body>
+
+<script type="text/javaScript">
+
+/**
+ * 배열 중복 제거 이벤트
+ */
+function fnRemoveDupl(arr){
+	var a = {};
+	for( var i=0; i<arr.length; i++ ){
+	    if( typeof a[arr[i]] == 'undefined' ){
+	        a[arr[i]] = 1;
+	    }
+	}
+	arr.length = 0;
+	for( var i in a ){
+	    arr[arr.length] = i;
+	}
+	return arr;
+}
+
+
+
+function fnSelectList(pageNo){
+	$("#pageIndex").val(pageNo);
+	$("#frm").attr("action", "/usr/mbkinfo/map/mapSelectDetail.kto");
+	$("#frm").submit();
+}
+
+function fnPrevList(){
+	$("#frm").attr("action", "/usr/mbkinfo/map/mapSelectList.kto");
+	$("#frm").submit(); 
+	//location.href = "/usr/mbkinfo/map/mapSelectList.kto?currentMenuSn=105";
+}
+
+
+/**
+ * 인허가정보 상세 조회 화면으로 이동
+ */
+function fnSelectDetail(lodgeSn){
+	$("#lodgeSn").val(lodgeSn);
+	$("#currentMenuSn").val("16");
+	$("#searchGubun3").val('');	
+	$("#frm").attr("action", "/usr/mbkinfo/mbkinfo/mbkInfoSelectDetail.kto");
+	$("#frm").submit();
+}
+
+/**
+ * 민박업소 안내 상세 조회 화면으로 이동
+ */
+ function fnSelectIntroDetail(lodgeSn){
+	$("#lodgeSn").val(lodgeSn);	
+	$("#currentMenuSn").val("121");
+	$("#searchGubun3").val('');	
+	$("#frm").attr("action","/usr/mbkinfo/intro/introSelectDetail.kto");
+	$("#frm").submit();
+}
+
+
+$(document).ready(function(){
+	//광역 시도
+	fnSearchLodgeSidoCd();
+	
+	// 지역 시군구
+	if( $("#searchGubun1").val() != "" ){
+		var mcdVal = $("#searchGubun1").val();
+		fnSearchLodgeGugunCd(mcdVal, 'N');
+	}
+	
+});
+
+
+
+
+
+
+
+
+function fnLodgeXYUpdate(dataMap){
+	var url = "/usr/mbkinfo/map/mapLodgeXYUpdateAjax.kto";
+	var params = {"lodgeSn":dataMap.get("lodgeSn")
+			, "lodgeKatchX":dataMap.get("lodgeKatchX")
+			, "lodgeKatchY":dataMap.get("lodgeKatchY")
+			, "currentMenuSn":$("#currentMenuSn").val()};
+	$.post(url, params, function(data) {
+		if(data.result == "Y"){
+			markerdatas[dataMap.get("seq")] = dataMap;
+		} else {
+			alert("데이터 처리 중 오류가 발생했습니다.");
+		}	
+	}, "JSON")
+	.error(function(request,status,error) { 
+		alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error); 
+	});
+}
+
+
+HashMap = function(){
+	this.map = new Array()
+};
+
+HashMap.prototype = {
+	put : function(key, value){
+		this.map[key] = value;
+	},
+	get : function(key, value){
+		return this.map[key];
+	},
+	getAll : function(){
+		return this.map;
+	},
+	clear : function(){
+		this.map = new Array();
+	},
+	getKeys : function(){
+		var keys = new Array();
+		for(var i in this.map){
+			keys.push(i);
+		}
+		return keys;
+	}
+};
+
+var xyGaeaSoft = new naver.maps.Point(313711, 543236);		// 지어소프트
+var latlngGaeaSoft = naver.maps.TransCoord.fromTM128ToLatLng(xyGaeaSoft);
+var mapOptions = {
+	  useStyleMap:true		
+	, center: latlngGaeaSoft
+	, mapTypes: new naver.maps.MapTypeRegistry({
+		'normal': naver.maps.NaverStyleMapTypeOption.getNormalMap(),
+		'terrain': naver.maps.NaverStyleMapTypeOption.getTerrainMap(),
+		'satellite': naver.maps.NaverStyleMapTypeOption.getSatelliteMap(),
+		'hybrid': naver.maps.NaverStyleMapTypeOption.getHybridMap()
+	})
+	, scaleControl: true
+	, zoom: 16
+		, zoomControl: true
+	, zoomControlOptions: {
+        	position: naver.maps.Position.TOP_RIGHT
+	}	    
+};
+//지도를 생성합니다.
+var objMap = null;
+var objInfoWindow = null;
+var markerdatas = [];
+var arrMarkers = [];
+var arrLodgeUpdate = [];
+var arrAddrUpdate = [];
+var arrInfoWins = [];
+var maxX = 0;
+var minX = 1000000;
+var maxY = 0;
+var minY = 1000000;
+
+var addrToLodgeSnMap = new HashMap();
+var listenerPop = new HashMap();
+var listener = new HashMap();
+//======================================================================
+function ShowMapFromAddr() {
+	//======================================= Naver Map
+	
+	for(var i=0; i<markerdatas.length;i++){
+		// lodgeSn, lodgeNm : 사업장명, lodgeAddr : 지번주소, lodgeRoad : 도로명주소, lodgeKatchX : 위치정보_X, lodgeKatchY : 위치정보_Y
+		//var dataArray = markerdatas[i].split('|');
+		//var lodgeData = fnDataArray(markerdatas[i]);
+		var lodgeData = markerdatas[i];
+		var lodgeSn = lodgeData.get("lodgeSn");
+		var lodgeNm = lodgeData.get("lodgeNm");
+		var lodgeAddr = lodgeData.get("lodgeAddr");
+		var lodgeRoad = lodgeData.get("lodgeRoad");
+		var lodgeKatchX = lodgeData.get("lodgeKatchX");
+		var lodgeKatchY = lodgeData.get("lodgeKatchY");
+		var xyPoint = null;
+		var straddr = "";
+		if(lodgeRoad == null || lodgeRoad == ""){
+			straddr = lodgeAddr;
+		} else {
+			straddr = lodgeRoad;
+		}
+		//alert(i+lodgeNm);
+		if(lodgeKatchX == null || lodgeKatchX == "" || lodgeKatchY == null || lodgeKatchY == ""){
+			naver.maps.Service.geocode({ address: straddr}, function(status, response) {
+				/* if (status !== naver.maps.Service.Status.OK) {
+					return alert('검색 결과가 없거나 기타 네트워크 에러');
+		        } */
+				var result = response.result;
+				// 검색 결과 갯수: result.total
+				// 첫번째 결과 결과 주소: result.items[0].address
+				// 첫번째 검색 결과 좌표: result.items[0].point.y, result.items[0].point.x
+				var item = result.items[0];
+				var dataMap = addrToLodgeSnMap.get(result.userquery);
+				//var dataMap = fnDataArray(markerdatasValue);
+				
+				var xyPoint = new naver.maps.Point(item.point.x, item.point.y);
+				var xyTM128 = naver.maps.TransCoord.fromLatLngToTM128(xyPoint);   // wgs84 -> TM128
+				var latlngXyTM128 = naver.maps.TransCoord.fromTM128ToLatLng(xyTM128);
+				// ImageIcon
+				var objMarker = new naver.maps.Marker({
+					map: objMap
+					, position: latlngXyTM128
+					//, title : dataMap.get("lodgeNm") + result.items[0].address + " X :"+xyTM128.x + " Y :"+xyTM128.y
+					, icon: {
+						//url: 'http://static.naver.net/maps/v3/pin_default.png'
+						url: 'https://tong.visitkorea.or.kr/vkm/safestay/usr/img/common/ico-map-25.png'
+						, size: new naver.maps.Size(24, 37)
+						, anchor: new naver.maps.Point(12, 29)
+					}
+				});
+				
+				var content = "";
+				content += "<div class=\"locator\">";
+				content += "	<dl>";
+				content += "		<dt>"+lodgeData.get("lodgeNm")+"</dt>"; 
+				content += "		<dd>";
+				content += "			<p>"+straddr+"</p>";
+				content += "			<button class=\"viewDetail\"  title=\"상세보기 페이지 이동\" onclick=\"fnSelectDetail("+lodgeData.get("lodgeSn")+"); return false;\">상세보기</button>";
+				//content += "			<a href=\"#;\"  title=\"레이어 닫기\" class=\"btnClose\">닫기</a>";
+				content += "		</dd>";
+				content += "	</dl>";
+				content += "			<a href=\"javascript:fnMapLayerClose('"+lodgeData.get("lodgeSn")+"');\"  title=\"레이어 닫기\" class=\"btnClose\">닫기</a>";
+				content += "</div>";
+				var objInfoWindow = new naver.maps.InfoWindow({
+					content: content
+					, borderWidth : 0
+					, disableAnchor : true
+					, backgroundColor: 'transparent'
+					, pixelOffset: new naver.maps.Point(8, 6),
+				});
+				
+				// 마커 클릭 이벤트 처리
+				arrMarkers.push(objMarker);
+				arrInfoWins.push(objInfoWindow);
+				listener.put(lodgeData.get("lodgeSn"), objInfoWindow);
+				
+				naver.maps.Event.addListener(objMarker, 'click', getClickHandler(lodgeSn));
+				
+				
+				if(i == 0){
+					maxX = xyTM128.x;
+					minX = xyTM128.x;
+					maxY = xyTM128.y;
+					minY = xyTM128.y;
+				}
+				fnMapCenter(xyTM128.x, xyTM128.y);
+				dataMap.put("lodgeKatchX", xyTM128.x);
+				dataMap.put("lodgeKatchY", xyTM128.y);
+				fnLodgeXYUpdate(dataMap);
+			});
+		} else {
+			xyPoint = new naver.maps.Point(lodgeKatchX, lodgeKatchY);
+			var latlngXyPoint = naver.maps.TransCoord.fromTM128ToLatLng(xyPoint);
+			// ImageIcon
+			var objMarker = new naver.maps.Marker({
+				map: objMap
+				, position: latlngXyPoint
+				//, title : lodgeNm + straddr + " X :"+lodgeKatchX + " Y :"+lodgeKatchY
+				, icon: {
+					//url: 'http://static.naver.net/maps/v3/pin_default.png'
+					url: 'https://tong.visitkorea.or.kr/vkm/safestay/usr/img/common/ico-map-25.png'
+					, size: new naver.maps.Size(24, 37)
+					, anchor: new naver.maps.Point(12, 29)
+				}
+			});
+			
+			var content = "";
+			content += "<div class=\"locator\">";
+			content += "	<dl>";
+			content += "		<dt>"+lodgeData.get("lodgeNm")+"</dt>"; 
+			content += "		<dd>";
+			content += "			<p>"+straddr+"</p>";
+			content += "			<button class=\"viewDetail\"  title=\"상세보기 페이지 이동\" onclick=\"fnSelectDetail("+lodgeData.get("lodgeSn")+"); return false;\">상세보기</button>";
+			content += "			<a href=\"javascript:fnMapLayerClose('"+lodgeData.get("lodgeSn")+"');\"  title=\"레이어 닫기\" class=\"btnClose\">닫기</a>";
+			content += "		</dd>";
+			content += "	</dl>";
+			content += "</div>";
+			var objInfoWindow = new naver.maps.InfoWindow({
+				content: content
+				, borderWidth : 0
+				, disableAnchor : true
+				, backgroundColor: 'transparent'
+				, pixelOffset: new naver.maps.Point(8, 6),
+			});
+			// 마커 클릭 이벤트 처리
+			arrMarkers.push(objMarker);
+			arrInfoWins.push(objInfoWindow);
+			listener.put(lodgeData.get("lodgeSn"), objInfoWindow);
+			
+			naver.maps.Event.addListener(objMarker, 'click', getClickHandler(i));
+			
+			
+			if(i == 0){
+				maxX = parseFloat(lodgeKatchX);
+				minX = parseFloat(lodgeKatchX);
+				maxY = parseFloat(lodgeKatchY);
+				minY = parseFloat(lodgeKatchY);
+			}
+			fnMapCenter(parseFloat(lodgeKatchX), parseFloat(lodgeKatchY));
+		}
+		
+	}
+}
+
+function fnMapCenter(x, y){
+	if(maxX < x){
+		maxX = x;
+	}
+	if(minX > x){
+		minX = x;
+	}
+	if(maxY < y){
+		maxY = y;
+	}
+	if(minY > y){
+		minY = y;
+	}
+	var centerX = (maxX + minX) / 2; 
+	var centerY = (maxY + minY) / 2;
+	var centerPoint = new naver.maps.Point(centerX, centerY);
+	var latlngCenterPoint = naver.maps.TransCoord.fromTM128ToLatLng(centerPoint);
+	
+	objMap.setCenter(latlngCenterPoint);
+	
+	var zoomX = maxX - minX;
+	var zoomY = maxY - minY;
+	
+	var zoomLevel = 0;
+	if(zoomX > zoomY) {
+		if(zoomX < 250){
+			zoomLevel = 19;
+		} else if(zoomX < 500){
+			zoomLevel = 18;
+		} else if(zoomX < 1000){
+			zoomLevel = 17;
+		} else if(zoomX < 2000){
+			zoomLevel = 16;
+		} else if(zoomX < 4000){
+			zoomLevel = 15;
+		} else if(zoomX < 8000){
+			zoomLevel = 14;
+		} else if(zoomX < 16000){
+			zoomLevel = 13;
+		} else if(zoomX < 32000){
+			zoomLevel = 12;
+		} else if(zoomX < 64000){
+			zoomLevel = 11;
+		} else if(zoomX < 128000){
+			zoomLevel = 10;
+		} else if(zoomX < 256000){
+			zoomLevel = 9;
+		} else if(zoomX < 512000){
+			zoomLevel = 8;
+		} else if(zoomX < 1024000){
+			zoomLevel = 7;
+		}
+	} else {
+		if(zoomY < 160){
+			zoomLevel = 19;
+		} else if(zoomY < 320){
+			zoomLevel = 18;
+		} else if(zoomY < 640){
+			zoomLevel = 17;
+		} else if(zoomY < 1280){
+			zoomLevel = 16;
+		} else if(zoomY < 2560){
+			zoomLevel = 15;
+		} else if(zoomY < 5120){
+			zoomLevel = 14;
+		} else if(zoomY < 10240){
+			zoomLevel = 13;
+		} else if(zoomY < 20480){
+			zoomLevel = 12;
+		} else if(zoomY < 40960){
+			zoomLevel = 11;
+		} else if(zoomY < 81920){
+			zoomLevel = 10;
+		} else if(zoomY < 163840){
+			zoomLevel = 9;
+		} else if(zoomY < 327680){
+			//zoomLevel = 3;
+			zoomLevel = 7;
+		} else if(zoomY < 655360){
+			zoomLevel = 7;
+		}
+	}
+	//zoomLevel = zoomLevel - 1;
+	objMap.setZoom(zoomLevel);
+	
+}
+
+//해당 마커의 인덱스를 seq라는 클로저 변수로 저장하는 이벤트 핸들러를 반환합니다.
+function getClickHandler(seq) {
+	return function(e) {
+		//fnMapClick(lodgeSn);
+		var objMarker = arrMarkers[seq],
+            objInfoWindow = arrInfoWins[seq];
+
+        if (objInfoWindow.getMap()) {
+            objInfoWindow.close();
+        } else {
+            objInfoWindow.open(objMap, objMarker);
+        }
+    }
+}
+
+function fnNoXY(){
+	for(var i=0; i<markerdatas.length;i++){
+		// lodgeSn, lodgeNm : 사업장명, lodgeAddr : 지번주소, lodgeRoad : 도로명주소, lodgeKatchX : 위치정보_X, lodgeKatchY : 위치정보_Y
+		var lodgeData = markerdatas[i];
+		var lodgeSn = lodgeData.get("lodgeSn");
+		var lodgeNm = lodgeData.get("lodgeNm");
+		var lodgeAddr = lodgeData.get("lodgeAddr");
+		var lodgeRoad = lodgeData.get("lodgeRoad");
+		var lodgeKatchX = lodgeData.get("lodgeKatchX");
+		var lodgeKatchY = lodgeData.get("lodgeKatchY");
+		
+		if(lodgeKatchX == null || lodgeKatchX == "" || lodgeKatchY == null || lodgeKatchY == ""){
+			if(lodgeRoad == null || lodgeRoad == ""){
+				straddr = lodgeAddr;
+			} else {
+				straddr = lodgeRoad;
+			}
+			addrToLodgeSnMap.put(straddr,lodgeData);
+		}
+	}
+}
+
+window.onload = function(){
+	if(markerdatas.length > 0){
+		objMap = new naver.maps.Map('divMap', mapOptions);
+		
+		fnNoXY();
+		
+		ShowMapFromAddr();
+		
+	} else {
+		$("#divMap").hide();
+	}
+}
+
+
+</script>
+
+
+
+
+
+
+<script type="text/javaScript">
+//인허가정보조회
+function fnSelectMbkInfotList2(){
+	var search = $("#searchText2").val();
+		
+	if(search.includes("텔레")  || search.includes("세탁") || search.includes("테더") || search.includes("코인") || search.includes("업비트") || search.includes("환치기") || search.includes("환전사기") ||
+			search.includes("알트") || search.includes("손대손") || search.includes("무통") || search.includes("암호화폐") || search.includes("그룹방") || search.includes("유령작업") || search.includes("텔문의") ||
+			search.includes("연식계정") || search.includes("케이구매") || search.includes("아이i스") || search.includes("브액구매") || search.includes("작대기구매") || search.includes("마양구매") || search.includes("떨구매") ||
+			search.includes("떨액구매") || search.includes("얼음술구매") || search.includes("우유주사")){
+		
+		alert("검색 금지된 키워드가 포합되어 있습니다.");
+		
+		return false;
+	}else{
+		location.href = '/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto?currentMenuSn=16&searchText=' + search ;
+	}	
+	
+	
+}
+function fnSelectIntroList2(){
+	var searchGubun1 = $("#searchLodgeSidoCd2").val()
+	var searchGubun2 = $("#searchLodgeGugunCd2").val()	
+	var lodgeSidoCdNm2 = $("#lodgeSidoCdNm2").val()
+	var lodgeGugunCdNm2 = $("#lodgeGugunCdNm2").val()	
+	location.href = '/usr/mbkinfo/intro/rmsIntroSelectList.kto?currentMenuSn=121&searchGubun1=' + searchGubun1 +'&searchGubun2='+ searchGubun2 +'&lodgeSidoCdNm='+ lodgeSidoCdNm2 +'&lodgeGugunCdNm='+ lodgeGugunCdNm2;
+}
+
+$(document).ready(function(){    
+	fnSearchLodgeSidoCd2();
+	
+	$("#searchText2").keypress(function (e) {
+		if (e.keyCode == 13) {
+			fnSelectMbkInfotList2();
+		}
+	});
+});
+
+//광역 시군구
+ function fnSearchLodgeSidoCd2(){
+ 	var url = "/common/code/midCodeSelectListAjax.kto";
+ 	var params = {"lcdSn":41};
+ 	
+ 	$.post(url, params, function(data) {
+ 		if(data.result == "Y"){
+ 			var out = "";
+ 			if(data.midCodeList.length > 0){
+ 				out += "<dd><a href="+"javascript:fnClearLodgeCd();"+">"+'전체'+"</a></dd>";
+ 				for(var i=0;i<data.midCodeList.length;i++){
+ 					out += "<dd><a href="+"javascript:fnSearchLodgeGugunCd2('"+data.midCodeList[i].mcdVal+"','"+'Y'+"','"+ data.midCodeList[i].mcdNm+ "','"+'N'+ "');"+">"+data.midCodeList[i].mcdNm+"</a></dd>";
+ 				}
+ 				//alert(out);
+ 				$("#LodgeSidoCd2").html(out);
+ 				
+ 			}			
+ 		}
+ 	}, "JSON");
+
+ }
+
+ //지역 시군구
+ function fnSearchLodgeGugunCd2(mcdVal, clean, nm, map){
+ 	if(clean == "Y"){
+ 		fnClearLodgeGugunCd2();
+ 		if(nm != ""){
+ 			$("#lodgeSidoCdNm2").val(nm);
+ 		}
+ 		if(map == "Y"){
+ 			var pOut = "";
+ 			pOut += "<p>"+nm+"</p>"
+ 			$("#LodgeSidoCdText2").html(pOut);
+ 		}
+ 	}
+ 	$("#searchLodgeSidoCd2").val(mcdVal);	
+ 	var url = "/common/code/codeMcdValSelectListAjax.kto";
+ 	var params = {"mcdVal":mcdVal};	
+ 	$.post(url, params, function(data) {
+ 		if(data.result == "Y"){
+ 			var out = "";
+ 			if(data.codeList.length > 0){
+ 				out += "<dd><a href="+"javascript:fnSaveLodgeGugunCd2();"+">"+'전체'+"</a></dd>";
+ 				for(var i=0;i<data.codeList.length;i++){
+ 					out += "<dd><a href="+"javascript:fnSaveLodgeGugunCd2('"+data.codeList[i].cdVal+"','"+ data.codeList[i].cdNm+ "');"+">"+data.codeList[i].cdNm+"</a></dd>";
+ 				}
+ 				//alert(out);
+ 				$("#lodgeGugunCd2").html(out);
+ 			}			
+ 		}
+ 	}, "JSON");
+ }
+
+ //광역 시군구 전체 클릭 시 광역,지역 데이터 초기화
+ function fnClearLodgeCd2(){
+ 	var out = "";
+ 	out += "<dd><a>"+'전체'+"</a></dd>";
+ 	$("#lodgeGugunCd2").html(out);
+ 	
+ 	var pOut = "";
+ 	pOut += "<p>"+'전체'+"</p>"	
+ 	$("#lodgeGugunCdText2").html(pOut);	
+ 	
+ 	$("#searchLodgeSidoCd2").val('');
+ 	$("#lodgeSidoCdNm2").val('');
+ 	$("#searchLodgeGugunCd2").val('');
+ 	$("#lodgeGugunCdNm2").val('');
+ }
+
+ //지역 데이터 초기화
+ function fnClearLodgeGugunCd2(){
+ 	var pOut = "";
+ 	pOut += "<p>"+'전체'+"</p>"	
+ 	$("#lodgeGugunCdText2").html(pOut);	
+ 	
+ 	$("#searchLodgeGugunCd2").val('');
+ 	$("#lodgeGugunCdNm2").val('');
+ }
+
+ //지역 시군구 데이터 저장
+ function fnSaveLodgeGugunCd2(data, nm){
+ 	$("#searchLodgeGugunCd2").val(data);
+ 	$("#lodgeGugunCdNm2").val(nm);
+ }
+ 
+ 
+ 
+</script>
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top-sitemap">
+					<a href="/usr/main/sitemap.kto">사이트맵</a>
+				</div>
+				<div class="header-top-search">
+					<a href="javascript:;" class="search" onclick="searchOpen();">어떤 숙소를 찾고 계신가요?</a>
+				</div>
+				<div class="header-top-link">
+					<a href="https://knto.or.kr​" target="_blank">한국관광공사</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-main">
+			<div class="container">
+				<div class="header-main-logo">
+					<h1><a href="/usr/main/mainSelectList.kto"><img src="/usr/images/logo.png"></a></h1>
+				</div>
+				<div class="header-main-cate">
+					<ul>
+						<li>
+							<a href="/usr/gostay/infosys/infoSysSelectDetail.kto?currentMenuSn=18">세이프스테이란</a>
+							<dl>
+								<dd><a href="/usr/gostay/infosys/infoSysSelectDetail.kto?currentMenuSn=18">세이프스테이 소개</a></dd>
+							</dl>
+						</li>
+						<li>
+							<a href="/usr/main/articleList.kto?currentMenuSn=260">테마스테이</a>
+							<dl>
+								<dd><a href="/usr/main/articleList.kto?currentMenuSn=260">세이프스테이 기사</a></dd>
+								<dd><a href="/usr/main/cardNewsList.kto?currentMenuSn=260">카드뉴스</a></dd>	   
+							</dl>
+						</li>
+						<li>
+							<a href="/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto?currentMenuSn=16">민박 찾기</a>
+							<dl>
+								<dd><a href="/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto?currentMenuSn=16">인허가정보 조회</a></dd>
+								<dd><a href="/usr/mbkinfo/intro/rmsIntroSelectList.kto?currentMenuSn=121">민박업소 안내</a></dd>
+								<dd><a href="/usr/mbkinfo/map/mapSelectList.kto?currentMenuSn=105">지도에서 찾기</a></dd>
+							</dl>
+						</li>
+						<li>
+							<a href="/usr/stat/areaPeriodSelectList.kto?currentMenuSn=102">세이프스테이 통계</a>
+							<dl>
+								<dd><a href="javascript:fnOpenFullScreen('/usr/stat/dashboardSelectList.kto?currentMenuSn=101');">민박업 전체 현황</a></dd>
+								<dd><a href="/usr/stat/areaPeriodSelectList.kto?currentMenuSn=102">지역별-기간 통계</a></dd>
+								<dd><a href="/usr/stat/typePeriodSelectList.kto?currentMenuSn=103">유형별-기간 통계</a></dd>
+								<dd><a href="/usr/stat/areaTypeSelectList.kto?currentMenuSn=104">지역별-유형별 통계</a></dd>
+							</dl>
+						</li>
+						<li>
+							<a href="/usr/custom/notice/noticeSelectList.kto?currentMenuSn=260">이벤트 및 커뮤니티</a>
+							<dl>	 
+								<!-- <dd><a href="/usr/custom/notice/noticeSelectList.kto?currentMenuSn=260">공지사항</a></dd> -->
+								<dd><a href="/usr/custom/reference/referenceSelectList.kto?currentMenuSn=30">민박업 소식</a></dd>
+								<dd><a href="/usr/custom/media/eventSelectList.kto?currentMenuSn=260">이벤트</a></dd>
+								<dd><a href="/usr/custom/media/mediaSelectList.kto?currentMenuSn=260">소셜미디어</a></dd>
+								<dd><a href="/usr/custom/media/videoSelectList.kto?currentMenuSn=260">비디오</a></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="header-main-search">
+					<div class="inner">
+						<div class="container">
+							<div class="search-head">
+								<a href="javascript:;" class="close" onclick="searchClose();">닫기</a>
+							</div>
+							<div class="search-body">
+								<div class="search-box">
+									<ul>
+										<li>
+											<div class="list-head">
+												<p>
+													<small>전국에 등록된 합법숙소를 <br class="is-m">확인해 보세요!</small>
+													<b>민박업소 인허가 <br class="is-m">정보 조회</b>
+												</p>
+											</div>
+											<div class="list-body">
+												<div class="input-box">
+													<input type="text" name="searchText2" id="searchText2" placeholder="민박업소 명을 입력해주세요 :)">
+												</div>
+												<div class="button-box mt20 mt-lg-16">
+													<a href="javascript:fnSelectMbkInfotList2();" class="btn btn-active w160 flex-lg-1 mr16 mr-lg-8">검색</a>
+													<a href="/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto?currentMenuSn=16" class="btn btn-white w160 flex-lg-1">상세검색</a>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="list-head">
+												<p>
+													<small>민박업소의 상세정보를 <br class="is-m">확인해보세요!</small>
+													<b>민박업소 안내</b>
+												</p>
+											</div>
+											<div class="list-body">
+												<div class="flex flex-vc">
+													<div class="flex-1 flex-lg-0 col-lg-12 mr14 mr-lg-0">
+														<div class="select-custom-box">
+															<div class="select-inner">
+																<button type="button" id="lodgeSidoCdText2">
+																			<p>전체</p>
+																</button>
+																<div>
+																	<dl name="LodgeSidoCd2" id="LodgeSidoCd2"></dl>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="flex-1 flex-lg-0 col-lg-12 mt-lg-8">
+														<div class="select-custom-box">
+															<div class="select-inner">
+																<button type="button" id="lodgeGugunCdText2">
+																		<p>전체</p>
+																</button>
+																<div>
+																	<dl>
+																		<dl name="lodgeGugunCd2" id="lodgeGugunCd2"></dl>
+																	</dl>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="button-box mt20 mt-lg-16">
+													<a href="javascript:fnSelectIntroList2();" class="btn btn-active w160 flex-lg-1 mr16 mr-lg-8">검색</a>
+													<a href="/usr/mbkinfo/intro/rmsIntroSelectList.kto?currentMenuSn=121" class="btn btn-white w160 flex-lg-1">상세검색</a>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-mobile">
+			<div class="mobile-head">
+				<a href="javascript:;" class="menu" onclick="menuOpen();">메뉴바</a>
+				<h1><a href="/usr/main/mainSelectList.kto"><img src="/usr/images/logo.png"></a></h1>
+				<a href="javascript:;" class="search" onclick="searchOpen();">검색</a>
+			</div>
+			<div class="mobile-body">
+				<div class="inner">
+					<div class="list-head">
+						<a href="javascript:;" class="close" onclick="menuClose();">닫기</a>
+					</div>
+					<div class="list-body">
+						<ul>
+							<li>
+								<button type="button">세이프스테이란</button>
+								<dl>
+									<dd><a href="/usr/gostay/infosys/infoSysSelectDetail.kto?currentMenuSn=18">세이프스테이 소개</a></dd>
+								</dl>
+							</li>
+							<li>
+								<button type="button">테마스테이</button>    
+								<dl>								
+									<dd><a href="/usr/main/articleList.kto?currentMenuSn=260">세이프스테이 기사</a></dd>
+									<dd><a href="/usr/main/cardNewsList.kto?currentMenuSn=260">카드뉴스</a></dd>	   
+								</dl>
+							</li>
+							<li>
+								<button type="button">민박 찾기</button>    
+								<dl>
+									<dd><a href="/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto?currentMenuSn=16">인허가정보 조회</a></dd>
+									<dd><a href="/usr/mbkinfo/intro/rmsIntroSelectList.kto?currentMenuSn=121">민박업소 안내</a></dd>
+									<dd><a href="/usr/mbkinfo/map/mapSelectList.kto?currentMenuSn=105">지도에서 찾기</a></dd>
+								</dl>
+							</li>
+							<li>
+								<button type="button">세이프스테이 통계</button>    
+								<dl>
+									<dd><a href="/usr/stat/dashboardSelectList.kto?currentMenuSn=101">민박업 전체 현황</a></dd>
+									<dd><a href="/usr/stat/areaPeriodSelectList.kto?currentMenuSn=102">지역별-기간 통계</a></dd>
+									<dd><a href="/usr/stat/typePeriodSelectList.kto?currentMenuSn=103">유형별-기간 통계</a></dd>
+									<dd><a href="/usr/stat/areaTypeSelectList.kto?currentMenuSn=104">지역별-유형별 통계</a></dd>
+								</dl>
+							</li>
+							<li>
+								<button type="button">이벤트 및 커뮤니티</button>    
+								<dl>   
+									<!-- <dd><a href="/usr/custom/notice/noticeSelectList.kto?currentMenuSn=260">공지사항</a></dd> -->
+									<dd><a href="/usr/custom/reference/referenceSelectList.kto?currentMenuSn=30">민박업 소식</a></dd>
+									<dd><a href="/usr/custom/media/eventSelectList.kto?currentMenuSn=260">이벤트</a></dd>
+									<dd><a href="/usr/custom/media/mediaSelectList.kto?currentMenuSn=260">소셜미디어</a></dd>
+									<dd><a href="/usr/custom/media/videoSelectList.kto?currentMenuSn=260">비디오</a></dd>
+								</dl>
+							</li>
+						</ul> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+<form id="frm2" name="frm2" action="" method="post">
+	<input type="hidden" name="searchLodgeSidoCd2" id="searchLodgeSidoCd2" value=""/>
+	<input type="hidden" name="searchLodgeGugunCd2" id="searchLodgeGugunCd2" value=""/>	
+	<input type="hidden" name="lodgeSidoCdNm2" id="lodgeSidoCdNm2" value=""/>
+	<input type="hidden" name="lodgeGugunCdNm2" id="lodgeGugunCdNm2" value=""/>
+</form>
+
+<form id="frm" name="frm" action="/usr/mbkinfo/map/mapSelectDetail.kto" method="post">
+	<input type="hidden" name="currentMenuSn" id="currentMenuSn" value="105"/>
+	<input type="hidden" name="searchGubun1" id="searchGubun1" value="STD01"/>
+	<input type="hidden" name="searchGubun2" id="searchGubun2" value=""/>	
+
+	<input type="hidden" name="searchGubun3" class = "searchGubun3" id="searchGubun31" value="2" />
+	
+	<input type="hidden" name="searchGubun4" id="searchGubun4" value=""/>
+	<input type="hidden" name="searchLodgeSidoCd" id="searchLodgeSidoCd" value="STD01"/>
+	<input type="hidden" name="searchLodgeGugunCd" id="searchLodgeGugunCd" value=""/>
+	<input type="hidden" name="lodgeSidoCdNm" id="lodgeSidoCdNm" value="서울특별시"/>
+	<input type="hidden" name="lodgeGugunCdNm" id="lodgeGugunCdNm" value=""/>
+	<input type="hidden" name="mcdVal" id="mcdVal"/>
+	
+	<input type="hidden" name="lodgeSn" id="lodgeSn" value=""/>
+	<input type="hidden" name="pageIndex" id="pageIndex" value="521"/>
+	<input type="hidden" name="searchText" id=""searchText"" value=""/>
+
+	<section>
+		<div class="container">
+			<div class="location-box">
+				<ul>
+					<li class="home"><a href="/usr/main/mainSelectList.kto">홈</a></li>
+					<li><a href="/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto?currentMenuSn=16">민박 찾기</a></li>
+					<li><a href="/usr/mbkinfo/map/mapSelectList.kto?currentMenuSn=105">지도에서 찾기</a></li>
+				</ul>
+			</div>
+			<div class="title-box">
+				<h2>지도에서 찾기</h2>
+				<p>※ 관광진흥법 상 (외국인관광 도시민박업 /한옥체험업 / 관광펜션업 / 호스텔업) 현재 운영중인 업소 중 정보제공에 동의한 민박업소의 상세정보를 확인할 수 있습니다.</p>
+			</div>
+			<div class="search-result-box">
+				<strong>검색조건</strong>
+				<ul>
+					<li>서울특별시 </li>
+					
+					<li>
+						
+						
+							
+								
+									외국인관광도시민박업
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+							
+								
+							
+						
+					</li>										
+					<li>
+												
+					</li>	
+				</ul>
+				<div class="button-box">
+					<a href="javascript:fnPrevList();" class="btn btn-active search w180 flex-lg-1">재검색</a>
+				</div>
+			</div>
+			<div class="map-box mt32"  id="divMap">
+						
+				<!-- <div class="mapBox" id="divMap"></div>지도 나오는 부분 -->
+				<!-- <div class="mapBox" id="divMap"></div>지도 나오는 부분 -->
+			</div>
+			
+			
+			
+			<div class="table-box mt80 mt-lg-40">
+				<div class="table-head">
+					<b>총 게시물 <strong>6473</strong>건 (<span>521</span>/540page)</b>
+				</div>
+				<div class="table-body bt">
+					<table>
+						<tbody>
+							
+								
+									
+										<tr>
+											<td class="px0 py0">
+												<div class="loca-list-box">
+													<div class="list-left">
+														<a href="javascript:fnSelectDetail(168421);">
+															<div class="list-subject">
+																<em>168421</em>
+																<p>JS house3</p>
+															</div>
+															<div class="list-info">
+																<dl>
+																	<dd><p>서울특별시 마포구</p></dd>
+																	<dd><b>민박업종</b><p>외국인관광도시민박업</p></dd>
+																	
+																	<dd><b>인허가일자</b><p>
+																	
+																	2020-06-30
+																	</p></dd>
+																	<dd><b>영업상태</b><p>영업/정상</p></dd>
+																</dl>
+															</div>
+														</a>
+													</div>
+														
+												</div>						
+											</td>
+										</tr>
+										
+										<script type="text/javaScript">
+										var resultMap = new HashMap();
+										resultMap.put("seq", "0");
+										resultMap.put("lodgeSn", "168421");
+										resultMap.put("lodgeNm", "JS house3");
+										resultMap.put("lodgeAddr", "서울특별시 마포구 동교동 113-26");
+										resultMap.put("lodgeRoad", "서울특별시 마포구 연희로1길 30-3, 지층 101호 (동교동)");
+										resultMap.put("lodgeKatchX", "");
+										resultMap.put("lodgeKatchY", "");
+										//markerdatas[0] = "168421|JS house3|서울특별시 마포구 동교동 113-26|서울특별시 마포구 연희로1길 30-3, 지층 101호 (동교동)||";
+										markerdatas[0] = resultMap;
+										</script>
+										
+									
+										<tr>
+											<td class="px0 py0">
+												<div class="loca-list-box">
+													<div class="list-left">
+														<a href="javascript:fnSelectDetail(168420);">
+															<div class="list-subject">
+																<em>168420</em>
+																<p>JS house1</p>
+															</div>
+															<div class="list-info">
+																<dl>
+																	<dd><p>서울특별시 마포구</p></dd>
+																	<dd><b>민박업종</b><p>외국인관광도시민박업</p></dd>
+																	
+																	<dd><b>인허가일자</b><p>
+																	
+																	2020-06-30
+																	</p></dd>
+																	<dd><b>영업상태</b><p>영업/정상</p></dd>
+																</dl>
+															</div>
+														</a>
+													</div>
+														
+												</div>						
+											</td>
+										</tr>
+										
+										<script type="text/javaScript">
+										var resultMap = new HashMap();
+										resultMap.put("seq", "1");
+										resultMap.put("lodgeSn", "168420");
+										resultMap.put("lodgeNm", "JS house1");
+										resultMap.put("lodgeAddr", "서울특별시 마포구 동교동 113-26");
+										resultMap.put("lodgeRoad", "서울특별시 마포구 연희로1길 30-3, 2층 301호 (동교동)");
+										resultMap.put("lodgeKatchX", "");
+										resultMap.put("lodgeKatchY", "");
+										//markerdatas[1] = "168420|JS house1|서울특별시 마포구 동교동 113-26|서울특별시 마포구 연희로1길 30-3, 2층 301호 (동교동)||";
+										markerdatas[1] = resultMap;
+										</script>
+										
+									
+										<tr>
+											<td class="px0 py0">
+												<div class="loca-list-box">
+													<div class="list-left">
+														<a href="javascript:fnSelectDetail(166971);">
+															<div class="list-subject">
+																<em>166971</em>
+																<p>무니하우스</p>
+															</div>
+															<div class="list-info">
+																<dl>
+																	<dd><p>서울특별시 용산구</p></dd>
+																	<dd><b>민박업종</b><p>외국인관광도시민박업</p></dd>
+																	
+																	<dd><b>인허가일자</b><p>
+																	
+																	2016-02-29
+																	</p></dd>
+																	<dd><b>영업상태</b><p>영업/정상</p></dd>
+																</dl>
+															</div>
+														</a>
+													</div>
+														
+												</div>						
+											</td>
+										</tr>
+										
+										<script type="text/javaScript">
+										var resultMap = new HashMap();
+										resultMap.put("seq", "2");
+										resultMap.put("lodgeSn", "166971");
+										resultMap.put("lodgeNm", "무니하우스");
+										resultMap.put("lodgeAddr", "서울특별시 용산구 보광동 240-10");
+										resultMap.put("lodgeRoad", "서울특별시 용산구 보광로32길 18-6 (보광동)");
+										resultMap.put("lodgeKatchX", "");
+										resultMap.put("lodgeKatchY", "");
+										//markerdatas[2] = "166971|무니하우스|서울특별시 용산구 보광동 240-10|서울특별시 용산구 보광로32길 18-6 (보광동)||";
+										markerdatas[2] = resultMap;
+										</script>
+										
+									
+										<tr>
+											<td class="px0 py0">
+												<div class="loca-list-box">
+													<div class="list-left">
+														<a href="javascript:fnSelectDetail(167884);">
+															<div class="list-subject">
+																<em>167884</em>
+																<p>와이제이그린하우스</p>
+															</div>
+															<div class="list-info">
+																<dl>
+																	<dd><p>서울특별시 마포구</p></dd>
+																	<dd><b>민박업종</b><p>외국인관광도시민박업</p></dd>
+																	
+																	<dd><b>인허가일자</b><p>
+																	
+																	2022-12-15
+																	</p></dd>
+																	<dd><b>영업상태</b><p>영업/정상</p></dd>
+																</dl>
+															</div>
+														</a>
+													</div>
+														
+												</div>						
+											</td>
+										</tr>
+										
+										<script type="text/javaScript">
+										var resultMap = new HashMap();
+										resultMap.put("seq", "3");
+										resultMap.put("lodgeSn", "167884");
+										resultMap.put("lodgeNm", "와이제이그린하우스");
+										resultMap.put("lodgeAddr", "서울특별시 마포구 서교동 347-3");
+										resultMap.put("lodgeRoad", "서울특별시 마포구 어울마당로 136-10, 4층 (서교동)");
+										resultMap.put("lodgeKatchX", "");
+										resultMap.put("lodgeKatchY", "");
+										//markerdatas[3] = "167884|와이제이그린하우스|서울특별시 마포구 서교동 347-3|서울특별시 마포구 어울마당로 136-10, 4층 (서교동)||";
+										markerdatas[3] = resultMap;
+										</script>
+										
+									
+										<tr>
+											<td class="px0 py0">
+												<div class="loca-list-box">
+													<div class="list-left">
+														<a href="javascript:fnSelectDetail(167882);">
+															<div class="list-subject">
+																<em>167882</em>
+																<p>서원</p>
+															</div>
+															<div class="list-info">
+																<dl>
+																	<dd><p>서울특별시 마포구</p></dd>
+																	<dd><b>민박업종</b><p>외국인관광도시민박업</p></dd>
+																	
+																	<dd><b>인허가일자</b><p>
+																	
+																	2022-12-08
+																	</p></dd>
+																	<dd><b>영업상태</b><p>영업/정상</p></dd>
+																</dl>
+															</div>
+														</a>
+													</div>
+														
+												</div>						
+											</td>
+										</tr>
+										
+										<script type="text/javaScript">
+										var resultMap = new HashMap();
+										resultMap.put("seq", "4");
+										resultMap.put("lodgeSn", "167882");
+										resultMap.put("lodgeNm", "서원");
+										resultMap.put("lodgeAddr", "서울특별시 마포구 동교동 204-7");
+										resultMap.put("lodgeRoad", "서울특별시 마포구 동교로27길 27-10, 201호 (동교동)");
+										resultMap.put("lodgeKatchX", "");
+										resultMap.put("lodgeKatchY", "");
+										//markerdatas[4] = "167882|서원|서울특별시 마포구 동교동 204-7|서울특별시 마포구 동교로27길 27-10, 201호 (동교동)||";
+										markerdatas[4] = resultMap;
+										</script>
+										
+									
+										<tr>
+											<td class="px0 py0">
+												<div class="loca-list-box">
+													<div class="list-left">
+														<a href="javascript:fnSelectDetail(167879);">
+															<div class="list-subject">
+																<em>167879</em>
+																<p>플러하우스</p>
+															</div>
+															<div class="list-info">
+																<dl>
+																	<dd><p>서울특별시 마포구</p></dd>
+																	<dd><b>민박업종</b><p>외국인관광도시민박업</p></dd>
+																	
+																	<dd><b>인허가일자</b><p>
+																	
+																	2023-01-19
+																	</p></dd>
+																	<dd><b>영업상태</b><p>영업/정상</p></dd>
+																</dl>
+															</div>
+														</a>
+													</div>
+														
+												</div>						
+											</td>
+										</tr>
+										
+										<script type="text/javaScript">
+										var resultMap = new HashMap();
+										resultMap.put("seq", "5");
+										resultMap.put("lodgeSn", "167879");
+										resultMap.put("lodgeNm", "플러하우스");
+										resultMap.put("lodgeAddr", "서울특별시 마포구 동교동 188-5");
+										resultMap.put("lodgeRoad", "서울특별시 마포구 와우산로38길 8, 1층 (동교동)");
+										resultMap.put("lodgeKatchX", "");
+										resultMap.put("lodgeKatchY", "");
+										//markerdatas[5] = "167879|플러하우스|서울특별시 마포구 동교동 188-5|서울특별시 마포구 와우산로38길 8, 1층 (동교동)||";
+										markerdatas[5] = resultMap;
+										</script>
+										
+									
+										<tr>
+											<td class="px0 py0">
+												<div class="loca-list-box">
+													<div class="list-left">
+														<a href="javascript:fnSelectDetail(167873);">
+															<div class="list-subject">
+																<em>167873</em>
+																<p>송소담</p>
+															</div>
+															<div class="list-info">
+																<dl>
+																	<dd><p>서울특별시 성북구</p></dd>
+																	<dd><b>민박업종</b><p>외국인관광도시민박업</p></dd>
+																	
+																	<dd><b>인허가일자</b><p>
+																	
+																	2023-01-20
+																	</p></dd>
+																	<dd><b>영업상태</b><p>영업/정상</p></dd>
+																</dl>
+															</div>
+														</a>
+													</div>
+														
+												</div>						
+											</td>
+										</tr>
+										
+										<script type="text/javaScript">
+										var resultMap = new HashMap();
+										resultMap.put("seq", "6");
+										resultMap.put("lodgeSn", "167873");
+										resultMap.put("lodgeNm", "송소담");
+										resultMap.put("lodgeAddr", "서울특별시 성북구 장위동 65-136");
+										resultMap.put("lodgeRoad", "서울특별시 성북구 돌곶이로25길 59-3 (장위동)");
+										resultMap.put("lodgeKatchX", "");
+										resultMap.put("lodgeKatchY", "");
+										//markerdatas[6] = "167873|송소담|서울특별시 성북구 장위동 65-136|서울특별시 성북구 돌곶이로25길 59-3 (장위동)||";
+										markerdatas[6] = resultMap;
+										</script>
+										
+									
+										<tr>
+											<td class="px0 py0">
+												<div class="loca-list-box">
+													<div class="list-left">
+														<a href="javascript:fnSelectDetail(167859);">
+															<div class="list-subject">
+																<em>167859</em>
+																<p>STAY SEUL, Sangsu</p>
+															</div>
+															<div class="list-info">
+																<dl>
+																	<dd><p>서울특별시 마포구</p></dd>
+																	<dd><b>민박업종</b><p>외국인관광도시민박업</p></dd>
+																	
+																	<dd><b>인허가일자</b><p>
+																	
+																	2024-04-22
+																	</p></dd>
+																	<dd><b>영업상태</b><p>영업/정상</p></dd>
+																</dl>
+															</div>
+														</a>
+													</div>
+														
+												</div>						
+											</td>
+										</tr>
+										
+										<script type="text/javaScript">
+										var resultMap = new HashMap();
+										resultMap.put("seq", "7");
+										resultMap.put("lodgeSn", "167859");
+										resultMap.put("lodgeNm", "STAY SEUL, Sangsu");
+										resultMap.put("lodgeAddr", "서울특별시 마포구 상수동 335-39 범일빌라");
+										resultMap.put("lodgeRoad", "서울특별시 마포구 와우산로5길 25-9, 202호 (상수동, 범일빌라)");
+										resultMap.put("lodgeKatchX", "");
+										resultMap.put("lodgeKatchY", "");
+										//markerdatas[7] = "167859|STAY SEUL, Sangsu|서울특별시 마포구 상수동 335-39 범일빌라|서울특별시 마포구 와우산로5길 25-9, 202호 (상수동, 범일빌라)||";
+										markerdatas[7] = resultMap;
+										</script>
+										
+									
+										<tr>
+											<td class="px0 py0">
+												<div class="loca-list-box">
+													<div class="list-left">
+														<a href="javascript:fnSelectDetail(167855);">
+															<div class="list-subject">
+																<em>167855</em>
+																<p>코즈 스테이</p>
+															</div>
+															<div class="list-info">
+																<dl>
+																	<dd><p>서울특별시 성북구</p></dd>
+																	<dd><b>민박업종</b><p>외국인관광도시민박업</p></dd>
+																	
+																	<dd><b>인허가일자</b><p>
+																	
+																	2022-10-26
+																	</p></dd>
+																	<dd><b>영업상태</b><p>영업/정상</p></dd>
+																</dl>
+															</div>
+														</a>
+													</div>
+														
+												</div>						
+											</td>
+										</tr>
+										
+										<script type="text/javaScript">
+										var resultMap = new HashMap();
+										resultMap.put("seq", "8");
+										resultMap.put("lodgeSn", "167855");
+										resultMap.put("lodgeNm", "코즈 스테이");
+										resultMap.put("lodgeAddr", "서울특별시 성북구 성북동 178-60");
+										resultMap.put("lodgeRoad", "서울특별시 성북구 성북로8길 35-20 (성북동)");
+										resultMap.put("lodgeKatchX", "");
+										resultMap.put("lodgeKatchY", "");
+										//markerdatas[8] = "167855|코즈 스테이|서울특별시 성북구 성북동 178-60|서울특별시 성북구 성북로8길 35-20 (성북동)||";
+										markerdatas[8] = resultMap;
+										</script>
+										
+									
+										<tr>
+											<td class="px0 py0">
+												<div class="loca-list-box">
+													<div class="list-left">
+														<a href="javascript:fnSelectDetail(167973);">
+															<div class="list-subject">
+																<em>167973</em>
+																<p>서울46</p>
+															</div>
+															<div class="list-info">
+																<dl>
+																	<dd><p>서울특별시 용산구</p></dd>
+																	<dd><b>민박업종</b><p>외국인관광도시민박업</p></dd>
+																	
+																	<dd><b>인허가일자</b><p>
+																	
+																	2020-04-03
+																	</p></dd>
+																	<dd><b>영업상태</b><p>영업/정상</p></dd>
+																</dl>
+															</div>
+														</a>
+													</div>
+														
+												</div>						
+											</td>
+										</tr>
+										
+										<script type="text/javaScript">
+										var resultMap = new HashMap();
+										resultMap.put("seq", "9");
+										resultMap.put("lodgeSn", "167973");
+										resultMap.put("lodgeNm", "서울46");
+										resultMap.put("lodgeAddr", "서울특별시 용산구 청파동2가 33-14번지");
+										resultMap.put("lodgeRoad", "서울특별시 용산구 청파로51길 9-13 (청파동2가)");
+										resultMap.put("lodgeKatchX", "");
+										resultMap.put("lodgeKatchY", "");
+										//markerdatas[9] = "167973|서울46|서울특별시 용산구 청파동2가 33-14번지|서울특별시 용산구 청파로51길 9-13 (청파동2가)||";
+										markerdatas[9] = resultMap;
+										</script>
+										
+									
+										<tr>
+											<td class="px0 py0">
+												<div class="loca-list-box">
+													<div class="list-left">
+														<a href="javascript:fnSelectDetail(167967);">
+															<div class="list-subject">
+																<em>167967</em>
+																<p>스테이 연</p>
+															</div>
+															<div class="list-info">
+																<dl>
+																	<dd><p>서울특별시 용산구</p></dd>
+																	<dd><b>민박업종</b><p>외국인관광도시민박업</p></dd>
+																	
+																	<dd><b>인허가일자</b><p>
+																	
+																	2024-04-22
+																	</p></dd>
+																	<dd><b>영업상태</b><p>영업/정상</p></dd>
+																</dl>
+															</div>
+														</a>
+													</div>
+														
+												</div>						
+											</td>
+										</tr>
+										
+										<script type="text/javaScript">
+										var resultMap = new HashMap();
+										resultMap.put("seq", "10");
+										resultMap.put("lodgeSn", "167967");
+										resultMap.put("lodgeNm", "스테이 연");
+										resultMap.put("lodgeAddr", "서울특별시 용산구 서계동 246-4");
+										resultMap.put("lodgeRoad", "서울특별시 용산구 만리재로26가길 24, 101호 (서계동)");
+										resultMap.put("lodgeKatchX", "");
+										resultMap.put("lodgeKatchY", "");
+										//markerdatas[10] = "167967|스테이 연|서울특별시 용산구 서계동 246-4|서울특별시 용산구 만리재로26가길 24, 101호 (서계동)||";
+										markerdatas[10] = resultMap;
+										</script>
+										
+									
+										<tr>
+											<td class="px0 py0">
+												<div class="loca-list-box">
+													<div class="list-left">
+														<a href="javascript:fnSelectDetail(167535);">
+															<div class="list-subject">
+																<em>167535</em>
+																<p>Koon house</p>
+															</div>
+															<div class="list-info">
+																<dl>
+																	<dd><p>서울특별시 용산구</p></dd>
+																	<dd><b>민박업종</b><p>외국인관광도시민박업</p></dd>
+																	
+																	<dd><b>인허가일자</b><p>
+																	
+																	2020-08-03
+																	</p></dd>
+																	<dd><b>영업상태</b><p>영업/정상</p></dd>
+																</dl>
+															</div>
+														</a>
+													</div>
+														
+												</div>						
+											</td>
+										</tr>
+										
+										<script type="text/javaScript">
+										var resultMap = new HashMap();
+										resultMap.put("seq", "11");
+										resultMap.put("lodgeSn", "167535");
+										resultMap.put("lodgeNm", "Koon house");
+										resultMap.put("lodgeAddr", "서울특별시 용산구 동자동 9-21");
+										resultMap.put("lodgeRoad", "서울특별시 용산구 후암로 91-20, 1층 (동자동)");
+										resultMap.put("lodgeKatchX", "");
+										resultMap.put("lodgeKatchY", "");
+										//markerdatas[11] = "167535|Koon house|서울특별시 용산구 동자동 9-21|서울특별시 용산구 후암로 91-20, 1층 (동자동)||";
+										markerdatas[11] = resultMap;
+										</script>
+										
+																						
+								
+								
+							
+													
+						</tbody>					
+					</table>
+					
+				</div>
+			</div>
+			<div class="paging-box">
+			
+				
+				
+				
+				
+				
+			
+
+<!DOCTYPE html>
+<div class="paging-01">
+	<a href="?pageIndex=1" aria-label="" class="first" title="첫번째 결과 리스트" onclick="fnSelectList(1);return false;"><div style="display:none;">첫번째 결과 리스트</div></a><a href="?pageIndex=520" aria-label="Previous" class="prev" title="이전 결과 리스트" onclick="fnSelectList(520);return false;"><div style="display:none;">이전 결과 리스트</div></a><span><a href="#" class="num selected" onclick="return false;">521</a><a href="?pageIndex=522" class="num" onclick="fnSelectList(522);return false;">522</a><a href="?pageIndex=523" class="num" onclick="fnSelectList(523);return false;">523</a><a href="?pageIndex=524" class="num" onclick="fnSelectList(524);return false;">524</a><a href="?pageIndex=525" class="num" onclick="fnSelectList(525);return false;">525</a><a href="?pageIndex=526" class="num" onclick="fnSelectList(526);return false;">526</a><a href="?pageIndex=527" class="num" onclick="fnSelectList(527);return false;">527</a><a href="?pageIndex=528" class="num" onclick="fnSelectList(528);return false;">528</a><a href="?pageIndex=529" class="num" onclick="fnSelectList(529);return false;">529</a><a href="?pageIndex=530" class="num" onclick="fnSelectList(530);return false;">530</a></span><a href="?pageIndex=531" aria-label="Next" class="next" title="다음  결과 리스트" onclick="fnSelectList(531);return false;"><div style="display:none;">다음 결과 리스트</div></a><a href="?pageIndex=540" aria-label="" class="last" title="마지막 검색결과 리스트" onclick="fnSelectList(540);return false;"><div style="display:none;">마지막 결과 리스트</div></a>
+</div>
+
+			</div>
+		</div>
+	</section>
+	
+	
+	
+
+
+
+<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="footer-top-link">
+					<ul>
+						<li><a href="https://knto.or.kr/helpdeskPolicyPrivacyHomepage" target="_blank">개인정보처리방침</a></li>
+						<li><a href="https://knto.or.kr/helpdeskPolicyEmailrejection" target="_blank">이메일무단수집거부</a></li>
+						<li><a href="https://knto.or.kr/mapHead" target="_blank">찾아오시는길</a></li>
+					</ul>
+				</div>
+				<div class="footer-top-sns">
+					<ul>
+						<li><a href="https://www.instagram.com/safestay_kor" target="_blank">링크1</a></li>
+						<li><a href="https://api.visitkorea.or.kr" target="_blank">링크2</a></li>
+						<li><a href="https://korean.visitkorea.or.kr/main/main.do" target="_blank">링크3</a></li>
+						<li><a href="https://knto.or.kr​" target="_blank">링크4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="footer-bottom-info">
+					<ul>
+						<li>
+							<span>우)26464 강원특별자치도 원주시 세계로 10</span>
+							<span>TEL : 033-738-3000</span>
+						</li>
+						<li>
+							<span>사업자등록번호 : 202-81-50707</span>
+							<span>통신판매업신고 : 제2009-서울중구-1234호</span>
+						</li>
+						<li>
+							<span>COPYRIGHT © 2023 KOREA TOURISM <br class="is-m">ORGANIZATION. ALL RIGHTS RESERVED.</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>  
+	 
+	<script src="/usr/js/swiper.js"></script>
+</body>
+</html>

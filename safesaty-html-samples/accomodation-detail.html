@@ -1,0 +1,676 @@
+
+
+
+
+
+<html lang="ko">
+
+<!-- Google tag (gtag.js) -->
+<script async src = "https://www.googletagmanager.com/gtag/js?id=G-MYLP093NHH"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+		
+	gtag('config', 'G-MYLP093NHH');
+</script>
+
+<script type = "application/id+json">
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"name": "한국관광공사 세이프스테이",
+	"sameAs": [
+		"https://www.instagram.com/safestay_kor/"
+	]
+}
+</script>
+
+
+
+
+
+
+
+<head>
+	<title>한국관광공사 세이프스테이</title>
+	<meta charset="UTF-8">
+	<meta name="naver-site-verification" content="7f72e3fc2cd6f383d31645a536d4042312edea8f">
+	<meta http-equiv="content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="description" content=" 믿을 수 있는 민박을 만들기 위한 세이프스테이 캠페인에 동참해주세요!">
+	<meta property="og:type" content="safestay.visitkorea.or.kr">
+	<meta property="og:title" content="한국관광공사 세이프스테이">
+	<meta property="og:description" content="믿을 수 있는 민박을 만들기 위한 세이프스테이 캠페인에 동참해주세요!">
+	<meta property="og:image" content="/usr/images/logo_goStay.png">
+	<meta property="og:url" content="http://safestay.visitkorea.or.kr/usr/main/mainSelectList.kto">
+	<link rel="icon" href="/usr/images/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+	<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+	<link href="" rel="icon" type="image/jpg">
+	<link href="" rel="shortcut icon" type="image/jpg">
+	<link href="" rel="apple-touch-icon" type="image/jpg">				
+	<link rel="stylesheet" type="text/css" href="/usr/css/swiper.min.css"> 
+	<link rel="stylesheet" type="text/css" href="/usr/css/base.css"> 
+	<link rel="stylesheet" type="text/css" href="/usr/css/grid.css"> 
+	<link rel="stylesheet" type="text/css" href="/usr/css/common.css?a=2">
+	<!-- Global site tag (gtag.js) - Google Analytics --> 
+	<script async src=" https://www.googletagmanager.com/gtag/js?id=UA-154933681-3"></script>  
+	<script src="/usr/js/jquery-1.12.4.js"></script>
+	<script src="/usr/js/swiper.min.js"></script>	
+	<script src="/usr/js/common.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="/usr/css/ui.datepicker.css"/>
+	<script type="text/javaScript" src="/usr/js/cal/ui.datepicker-ko.js"></script>
+	<script type="text/javascript" src="/usr/js/cal/jquery-ui-1.10.1.min.js"></script><!-- datepicker 용도로 추가 -->
+	
+</head>
+
+<script type="text/javaScript">
+
+/**[페이지 공통] 인쇄**/
+function fnPrint(){
+	var bTopPopupAreaDisplay = false;
+	if( $("#top-popup-area").length > 0 ){
+		if( $("#top-popup-area").css("display") == "none" ){
+			bTopPopupAreaDisplay = false;
+		}else{
+			bTopPopupAreaDisplay = true;
+		}
+		$("#top-popup-area").hide();
+	}
+	window.print();
+	if( bTopPopupAreaDisplay ){
+		$("#top-popup-area").show();
+	}else{
+		$("#top-popup-area").hide();
+	}
+}
+
+//광역 시군구
+function fnSearchLodgeSidoCd(){
+	var url = "/common/code/midCodeSelectListAjax.kto";
+	var params = {"lcdSn":41};
+	
+	$.post(url, params, function(data) {
+		if(data.result == "Y"){
+			var out = "";
+			if(data.midCodeList.length > 0){
+				out += "<dd><a href="+"javascript:fnClearLodgeCd();"+">"+'전체'+"</a></dd>";
+				for(var i=0;i<data.midCodeList.length;i++){
+					out += "<dd><a href="+"javascript:fnSearchLodgeGugunCd('"+data.midCodeList[i].mcdVal+"','"+'Y'+"','"+ data.midCodeList[i].mcdNm+ "','"+'N'+ "');"+">"+data.midCodeList[i].mcdNm+"</a></dd>";
+				}
+				//alert(out);
+				$("#LodgeSidoCd").html(out);
+				
+			}			
+		}
+	}, "JSON");
+
+}
+
+//지역 시군구
+function fnSearchLodgeGugunCd(mcdVal, clean, nm, map){
+	if(clean == "Y"){
+		fnClearLodgeGugunCd();
+		if(nm != ""){
+			$("#lodgeSidoCdNm").val(nm);
+		}
+		if(map == "Y"){
+			var pOut = "";
+			pOut += "<p>"+nm+"</p>"
+			$("#LodgeSidoCdText").html(pOut);
+		}
+	}
+	$("#searchLodgeSidoCd").val(mcdVal);	
+	var url = "/common/code/codeMcdValSelectListAjax.kto";
+	var params = {"mcdVal":mcdVal};	
+	$.post(url, params, function(data) {
+		if(data.result == "Y"){
+			var out = "";
+			if(data.codeList.length > 0){
+				out += "<dd><a href="+"javascript:fnSaveLodgeGugunCd();"+">"+'전체'+"</a></dd>";
+				for(var i=0;i<data.codeList.length;i++){
+					out += "<dd><a href="+"javascript:fnSaveLodgeGugunCd('"+data.codeList[i].cdVal+"','"+ data.codeList[i].cdNm+ "');"+">"+data.codeList[i].cdNm+"</a></dd>";
+				}
+				$("#lodgeGugunCd").html(out);
+			}			
+		}
+	}, "JSON");
+}
+
+//광역 시군구 전체 클릭 시 광역,지역 데이터 초기화
+function fnClearLodgeCd(){
+	var out = "";
+	out += "<dd><a>"+'전체'+"</a></dd>";
+	$("#lodgeGugunCd").html(out);
+	
+	var pOut = "";
+	pOut += "<p>"+'전체'+"</p>"	
+	$("#lodgeGugunCdText").html(pOut);	
+	
+	$("#searchLodgeSidoCd").val('');
+	$("#lodgeSidoCdNm").val('');
+	$("#searchLodgeGugunCd").val('');
+	$("#lodgeGugunCdNm").val('');
+}
+
+//지역 데이터 초기화
+function fnClearLodgeGugunCd(){
+	var pOut = "";
+	pOut += "<p>"+'전체'+"</p>"	
+	$("#lodgeGugunCdText").html(pOut);	
+	
+	$("#searchLodgeGugunCd").val('');
+	$("#lodgeGugunCdNm").val('');
+}
+
+//지역 시군구 데이터 저장
+function fnSaveLodgeGugunCd(data, nm){
+	$("#searchLodgeGugunCd").val(data);
+	$("#lodgeGugunCdNm").val(nm);
+}
+
+/**
+ * 시도 줄임말 REPLACE
+ */
+function fnCommonReplaceLocaleName(str){
+	var returnResult = "";
+	if( str != null && str != "" && str != undefined ){
+		if( str.indexOf("남도") > -1 ){
+			returnResult = fnCommonBiteSubstring(str,2);
+			returnResult += "남";
+		}else if( str.indexOf("북도") > -1 ){
+			returnResult = fnCommonBiteSubstring(str,2);
+			returnResult += "북";
+		}else{
+			returnResult = fnCommonBiteSubstring(str,4);
+		}
+	}
+	return returnResult;
+}
+/**
+ * 한글 Substring
+ */
+function fnCommonBiteSubstring(str,len){
+	var str = str;
+	var l = 0;
+	for( var i=0; i<str.length; i++ ){
+        l += (str.charCodeAt(i) > 128) ? 2 : 1;
+        if( l > len ) return str.substring(0,i);
+    }
+	return str;
+}
+</script>
+
+<script type="text/javaScript">
+
+function fnSelectList(){
+	$("#frm").attr("action","/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto");
+	$("#frm").submit();
+}
+
+</script>
+
+<body>
+
+
+
+
+
+<script type="text/javaScript">
+//인허가정보조회
+function fnSelectMbkInfotList2(){
+	var search = $("#searchText2").val();
+		
+	if(search.includes("텔레")  || search.includes("세탁") || search.includes("테더") || search.includes("코인") || search.includes("업비트") || search.includes("환치기") || search.includes("환전사기") ||
+			search.includes("알트") || search.includes("손대손") || search.includes("무통") || search.includes("암호화폐") || search.includes("그룹방") || search.includes("유령작업") || search.includes("텔문의") ||
+			search.includes("연식계정") || search.includes("케이구매") || search.includes("아이i스") || search.includes("브액구매") || search.includes("작대기구매") || search.includes("마양구매") || search.includes("떨구매") ||
+			search.includes("떨액구매") || search.includes("얼음술구매") || search.includes("우유주사")){
+		
+		alert("검색 금지된 키워드가 포합되어 있습니다.");
+		
+		return false;
+	}else{
+		location.href = '/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto?currentMenuSn=16&searchText=' + search ;
+	}	
+	
+	
+}
+function fnSelectIntroList2(){
+	var searchGubun1 = $("#searchLodgeSidoCd2").val()
+	var searchGubun2 = $("#searchLodgeGugunCd2").val()	
+	var lodgeSidoCdNm2 = $("#lodgeSidoCdNm2").val()
+	var lodgeGugunCdNm2 = $("#lodgeGugunCdNm2").val()	
+	location.href = '/usr/mbkinfo/intro/rmsIntroSelectList.kto?currentMenuSn=121&searchGubun1=' + searchGubun1 +'&searchGubun2='+ searchGubun2 +'&lodgeSidoCdNm='+ lodgeSidoCdNm2 +'&lodgeGugunCdNm='+ lodgeGugunCdNm2;
+}
+
+$(document).ready(function(){    
+	fnSearchLodgeSidoCd2();
+	
+	$("#searchText2").keypress(function (e) {
+		if (e.keyCode == 13) {
+			fnSelectMbkInfotList2();
+		}
+	});
+});
+
+//광역 시군구
+ function fnSearchLodgeSidoCd2(){
+ 	var url = "/common/code/midCodeSelectListAjax.kto";
+ 	var params = {"lcdSn":41};
+ 	
+ 	$.post(url, params, function(data) {
+ 		if(data.result == "Y"){
+ 			var out = "";
+ 			if(data.midCodeList.length > 0){
+ 				out += "<dd><a href="+"javascript:fnClearLodgeCd();"+">"+'전체'+"</a></dd>";
+ 				for(var i=0;i<data.midCodeList.length;i++){
+ 					out += "<dd><a href="+"javascript:fnSearchLodgeGugunCd2('"+data.midCodeList[i].mcdVal+"','"+'Y'+"','"+ data.midCodeList[i].mcdNm+ "','"+'N'+ "');"+">"+data.midCodeList[i].mcdNm+"</a></dd>";
+ 				}
+ 				//alert(out);
+ 				$("#LodgeSidoCd2").html(out);
+ 				
+ 			}			
+ 		}
+ 	}, "JSON");
+
+ }
+
+ //지역 시군구
+ function fnSearchLodgeGugunCd2(mcdVal, clean, nm, map){
+ 	if(clean == "Y"){
+ 		fnClearLodgeGugunCd2();
+ 		if(nm != ""){
+ 			$("#lodgeSidoCdNm2").val(nm);
+ 		}
+ 		if(map == "Y"){
+ 			var pOut = "";
+ 			pOut += "<p>"+nm+"</p>"
+ 			$("#LodgeSidoCdText2").html(pOut);
+ 		}
+ 	}
+ 	$("#searchLodgeSidoCd2").val(mcdVal);	
+ 	var url = "/common/code/codeMcdValSelectListAjax.kto";
+ 	var params = {"mcdVal":mcdVal};	
+ 	$.post(url, params, function(data) {
+ 		if(data.result == "Y"){
+ 			var out = "";
+ 			if(data.codeList.length > 0){
+ 				out += "<dd><a href="+"javascript:fnSaveLodgeGugunCd2();"+">"+'전체'+"</a></dd>";
+ 				for(var i=0;i<data.codeList.length;i++){
+ 					out += "<dd><a href="+"javascript:fnSaveLodgeGugunCd2('"+data.codeList[i].cdVal+"','"+ data.codeList[i].cdNm+ "');"+">"+data.codeList[i].cdNm+"</a></dd>";
+ 				}
+ 				//alert(out);
+ 				$("#lodgeGugunCd2").html(out);
+ 			}			
+ 		}
+ 	}, "JSON");
+ }
+
+ //광역 시군구 전체 클릭 시 광역,지역 데이터 초기화
+ function fnClearLodgeCd2(){
+ 	var out = "";
+ 	out += "<dd><a>"+'전체'+"</a></dd>";
+ 	$("#lodgeGugunCd2").html(out);
+ 	
+ 	var pOut = "";
+ 	pOut += "<p>"+'전체'+"</p>"	
+ 	$("#lodgeGugunCdText2").html(pOut);	
+ 	
+ 	$("#searchLodgeSidoCd2").val('');
+ 	$("#lodgeSidoCdNm2").val('');
+ 	$("#searchLodgeGugunCd2").val('');
+ 	$("#lodgeGugunCdNm2").val('');
+ }
+
+ //지역 데이터 초기화
+ function fnClearLodgeGugunCd2(){
+ 	var pOut = "";
+ 	pOut += "<p>"+'전체'+"</p>"	
+ 	$("#lodgeGugunCdText2").html(pOut);	
+ 	
+ 	$("#searchLodgeGugunCd2").val('');
+ 	$("#lodgeGugunCdNm2").val('');
+ }
+
+ //지역 시군구 데이터 저장
+ function fnSaveLodgeGugunCd2(data, nm){
+ 	$("#searchLodgeGugunCd2").val(data);
+ 	$("#lodgeGugunCdNm2").val(nm);
+ }
+ 
+ 
+ 
+</script>
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top-sitemap">
+					<a href="/usr/main/sitemap.kto">사이트맵</a>
+				</div>
+				<div class="header-top-search">
+					<a href="javascript:;" class="search" onclick="searchOpen();">어떤 숙소를 찾고 계신가요?</a>
+				</div>
+				<div class="header-top-link">
+					<a href="https://knto.or.kr​" target="_blank">한국관광공사</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-main">
+			<div class="container">
+				<div class="header-main-logo">
+					<h1><a href="/usr/main/mainSelectList.kto"><img src="/usr/images/logo.png"></a></h1>
+				</div>
+				<div class="header-main-cate">
+					<ul>
+						<li>
+							<a href="/usr/gostay/infosys/infoSysSelectDetail.kto?currentMenuSn=18">세이프스테이란</a>
+							<dl>
+								<dd><a href="/usr/gostay/infosys/infoSysSelectDetail.kto?currentMenuSn=18">세이프스테이 소개</a></dd>
+							</dl>
+						</li>
+						<li>
+							<a href="/usr/main/articleList.kto?currentMenuSn=260">테마스테이</a>
+							<dl>
+								<dd><a href="/usr/main/articleList.kto?currentMenuSn=260">세이프스테이 기사</a></dd>
+								<dd><a href="/usr/main/cardNewsList.kto?currentMenuSn=260">카드뉴스</a></dd>	   
+							</dl>
+						</li>
+						<li>
+							<a href="/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto?currentMenuSn=16">민박 찾기</a>
+							<dl>
+								<dd><a href="/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto?currentMenuSn=16">인허가정보 조회</a></dd>
+								<dd><a href="/usr/mbkinfo/intro/rmsIntroSelectList.kto?currentMenuSn=121">민박업소 안내</a></dd>
+								<dd><a href="/usr/mbkinfo/map/mapSelectList.kto?currentMenuSn=105">지도에서 찾기</a></dd>
+							</dl>
+						</li>
+						<li>
+							<a href="/usr/stat/areaPeriodSelectList.kto?currentMenuSn=102">세이프스테이 통계</a>
+							<dl>
+								<dd><a href="javascript:fnOpenFullScreen('/usr/stat/dashboardSelectList.kto?currentMenuSn=101');">민박업 전체 현황</a></dd>
+								<dd><a href="/usr/stat/areaPeriodSelectList.kto?currentMenuSn=102">지역별-기간 통계</a></dd>
+								<dd><a href="/usr/stat/typePeriodSelectList.kto?currentMenuSn=103">유형별-기간 통계</a></dd>
+								<dd><a href="/usr/stat/areaTypeSelectList.kto?currentMenuSn=104">지역별-유형별 통계</a></dd>
+							</dl>
+						</li>
+						<li>
+							<a href="/usr/custom/notice/noticeSelectList.kto?currentMenuSn=260">이벤트 및 커뮤니티</a>
+							<dl>	 
+								<!-- <dd><a href="/usr/custom/notice/noticeSelectList.kto?currentMenuSn=260">공지사항</a></dd> -->
+								<dd><a href="/usr/custom/reference/referenceSelectList.kto?currentMenuSn=30">민박업 소식</a></dd>
+								<dd><a href="/usr/custom/media/eventSelectList.kto?currentMenuSn=260">이벤트</a></dd>
+								<dd><a href="/usr/custom/media/mediaSelectList.kto?currentMenuSn=260">소셜미디어</a></dd>
+								<dd><a href="/usr/custom/media/videoSelectList.kto?currentMenuSn=260">비디오</a></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="header-main-search">
+					<div class="inner">
+						<div class="container">
+							<div class="search-head">
+								<a href="javascript:;" class="close" onclick="searchClose();">닫기</a>
+							</div>
+							<div class="search-body">
+								<div class="search-box">
+									<ul>
+										<li>
+											<div class="list-head">
+												<p>
+													<small>전국에 등록된 합법숙소를 <br class="is-m">확인해 보세요!</small>
+													<b>민박업소 인허가 <br class="is-m">정보 조회</b>
+												</p>
+											</div>
+											<div class="list-body">
+												<div class="input-box">
+													<input type="text" name="searchText2" id="searchText2" placeholder="민박업소 명을 입력해주세요 :)">
+												</div>
+												<div class="button-box mt20 mt-lg-16">
+													<a href="javascript:fnSelectMbkInfotList2();" class="btn btn-active w160 flex-lg-1 mr16 mr-lg-8">검색</a>
+													<a href="/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto?currentMenuSn=16" class="btn btn-white w160 flex-lg-1">상세검색</a>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="list-head">
+												<p>
+													<small>민박업소의 상세정보를 <br class="is-m">확인해보세요!</small>
+													<b>민박업소 안내</b>
+												</p>
+											</div>
+											<div class="list-body">
+												<div class="flex flex-vc">
+													<div class="flex-1 flex-lg-0 col-lg-12 mr14 mr-lg-0">
+														<div class="select-custom-box">
+															<div class="select-inner">
+																<button type="button" id="lodgeSidoCdText2">
+																			<p>전체</p>
+																</button>
+																<div>
+																	<dl name="LodgeSidoCd2" id="LodgeSidoCd2"></dl>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="flex-1 flex-lg-0 col-lg-12 mt-lg-8">
+														<div class="select-custom-box">
+															<div class="select-inner">
+																<button type="button" id="lodgeGugunCdText2">
+																		<p>전체</p>
+																</button>
+																<div>
+																	<dl>
+																		<dl name="lodgeGugunCd2" id="lodgeGugunCd2"></dl>
+																	</dl>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="button-box mt20 mt-lg-16">
+													<a href="javascript:fnSelectIntroList2();" class="btn btn-active w160 flex-lg-1 mr16 mr-lg-8">검색</a>
+													<a href="/usr/mbkinfo/intro/rmsIntroSelectList.kto?currentMenuSn=121" class="btn btn-white w160 flex-lg-1">상세검색</a>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-mobile">
+			<div class="mobile-head">
+				<a href="javascript:;" class="menu" onclick="menuOpen();">메뉴바</a>
+				<h1><a href="/usr/main/mainSelectList.kto"><img src="/usr/images/logo.png"></a></h1>
+				<a href="javascript:;" class="search" onclick="searchOpen();">검색</a>
+			</div>
+			<div class="mobile-body">
+				<div class="inner">
+					<div class="list-head">
+						<a href="javascript:;" class="close" onclick="menuClose();">닫기</a>
+					</div>
+					<div class="list-body">
+						<ul>
+							<li>
+								<button type="button">세이프스테이란</button>
+								<dl>
+									<dd><a href="/usr/gostay/infosys/infoSysSelectDetail.kto?currentMenuSn=18">세이프스테이 소개</a></dd>
+								</dl>
+							</li>
+							<li>
+								<button type="button">테마스테이</button>    
+								<dl>								
+									<dd><a href="/usr/main/articleList.kto?currentMenuSn=260">세이프스테이 기사</a></dd>
+									<dd><a href="/usr/main/cardNewsList.kto?currentMenuSn=260">카드뉴스</a></dd>	   
+								</dl>
+							</li>
+							<li>
+								<button type="button">민박 찾기</button>    
+								<dl>
+									<dd><a href="/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto?currentMenuSn=16">인허가정보 조회</a></dd>
+									<dd><a href="/usr/mbkinfo/intro/rmsIntroSelectList.kto?currentMenuSn=121">민박업소 안내</a></dd>
+									<dd><a href="/usr/mbkinfo/map/mapSelectList.kto?currentMenuSn=105">지도에서 찾기</a></dd>
+								</dl>
+							</li>
+							<li>
+								<button type="button">세이프스테이 통계</button>    
+								<dl>
+									<dd><a href="/usr/stat/dashboardSelectList.kto?currentMenuSn=101">민박업 전체 현황</a></dd>
+									<dd><a href="/usr/stat/areaPeriodSelectList.kto?currentMenuSn=102">지역별-기간 통계</a></dd>
+									<dd><a href="/usr/stat/typePeriodSelectList.kto?currentMenuSn=103">유형별-기간 통계</a></dd>
+									<dd><a href="/usr/stat/areaTypeSelectList.kto?currentMenuSn=104">지역별-유형별 통계</a></dd>
+								</dl>
+							</li>
+							<li>
+								<button type="button">이벤트 및 커뮤니티</button>    
+								<dl>   
+									<!-- <dd><a href="/usr/custom/notice/noticeSelectList.kto?currentMenuSn=260">공지사항</a></dd> -->
+									<dd><a href="/usr/custom/reference/referenceSelectList.kto?currentMenuSn=30">민박업 소식</a></dd>
+									<dd><a href="/usr/custom/media/eventSelectList.kto?currentMenuSn=260">이벤트</a></dd>
+									<dd><a href="/usr/custom/media/mediaSelectList.kto?currentMenuSn=260">소셜미디어</a></dd>
+									<dd><a href="/usr/custom/media/videoSelectList.kto?currentMenuSn=260">비디오</a></dd>
+								</dl>
+							</li>
+						</ul> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+<form id="frm2" name="frm2" action="" method="post">
+	<input type="hidden" name="searchLodgeSidoCd2" id="searchLodgeSidoCd2" value=""/>
+	<input type="hidden" name="searchLodgeGugunCd2" id="searchLodgeGugunCd2" value=""/>	
+	<input type="hidden" name="lodgeSidoCdNm2" id="lodgeSidoCdNm2" value=""/>
+	<input type="hidden" name="lodgeGugunCdNm2" id="lodgeGugunCdNm2" value=""/>
+</form>
+
+<form id="frm" name="frm" action="/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto" method="post">
+	<input type="hidden" name="currentMenuSn" id="currentMenuSn" value="16"/>
+	<input type="hidden" name="pageIndex" id="pageIndex" value="540"/>
+	<input name="pageUnit" id="pageUnit" type="hidden" value="10"/>
+	<input type="hidden" name="searchGubun" id="searchGubun" value=""/>
+	<input type="hidden" name="searchText" id="searchText" value=""/>
+	<input name="searchLodgeTypeCd" id="searchLodgeTypeCd" type="hidden" value=""/>
+	<input name="searchKqmark" id="searchKqmark" type="hidden" value=""/>
+	<input name="searchLodgeStateCd" id="searchLodgeStateCd" type="hidden" value=""/>
+	<input name="searchLodgeSidoCd" id="searchLodgeSidoCd" type="hidden" value="STD01"/>
+	<input name="searchLodgeGugunCd" id="searchLodgeGugunCd" type="hidden" value=""/>
+	<input name="searchLodgePermitStdDy" id="searchLodgePermitStdDy" type="hidden" value=""/>
+	<input name="searchLodgePermitEndDy" id="searchLodgePermitEndDy" type="hidden" value=""/>
+	<input type="hidden" name="lodgeSn" id="lodgeSn" value="165907"/>
+	<input type="hidden" name="lodgeSidoCdNm" id="lodgeSidoCdNm" value="서울특별시"/>
+	<input type="hidden" name="lodgeGugunCdNm" id="lodgeGugunCdNm" value=""/>
+   
+	<section class="cover">
+		<div class="container">
+			<div class="location-box">
+				<ul>
+					<li class="home"><a href="/usr/main/mainSelectList.kto">홈</a></li>
+					<li><a href="">민박 찾기</a></li>
+					<li><a href="/usr/mbkinfo/mbkinfo/mbkInfoSelectList.kto?currentMenuSn=16">인허가정보 조회하기</a></li>
+				</ul>
+			</div>
+			<div class="title-box">
+				<h2>인허가정보 조회하기</h2>
+			</div>
+			<div class="check-info-box">
+				<ul>
+					<li>
+						<strong>민박업소명</strong>
+						<p>화담채</p>
+					</li>
+					<li>
+						<strong>민박업소형태</strong>
+						<p>외국인관광도시민박업</p>
+					</li>
+					<li class="full">
+						<strong>주소</strong>
+						<p>
+						
+						서울특별시 성북구 종암로19라길 29-4 (종암동)
+						
+						</p>
+					</li>
+					<li>
+						<strong>지방행정데이터인허가번호</strong>
+						<p>CDFI2262212024000021</p>
+					</li>
+					<li>
+						<strong>지방행정데이터인허가일자</strong>
+						<p>
+							
+							2024-08-09
+						</p>
+					</li>
+					<li>
+						<strong>영업상태</strong>
+						<p>영업/정상(영업중)</p>
+					</li>
+					<li>
+						<strong>지역</strong>
+						<p>서울특별시 성북구</p>
+					</li>
+				</ul>
+			</div>
+			<div class="button-box flex-tc mt50 mt-lg-24">
+				<a href="javascript:fnPrint();" class="btn btn-white print w180 mr10 flex-lg-1">인쇄</a>
+				<a href="javascript:fnSelectList();" class="btn btn-active list w180 flex-lg-0 col-lg-6">목록</a>
+			</div>  
+		</div>
+	</section>
+	
+	
+	
+
+
+
+<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="footer-top-link">
+					<ul>
+						<li><a href="https://knto.or.kr/helpdeskPolicyPrivacyHomepage" target="_blank">개인정보처리방침</a></li>
+						<li><a href="https://knto.or.kr/helpdeskPolicyEmailrejection" target="_blank">이메일무단수집거부</a></li>
+						<li><a href="https://knto.or.kr/mapHead" target="_blank">찾아오시는길</a></li>
+					</ul>
+				</div>
+				<div class="footer-top-sns">
+					<ul>
+						<li><a href="https://www.instagram.com/safestay_kor" target="_blank">링크1</a></li>
+						<li><a href="https://api.visitkorea.or.kr" target="_blank">링크2</a></li>
+						<li><a href="https://korean.visitkorea.or.kr/main/main.do" target="_blank">링크3</a></li>
+						<li><a href="https://knto.or.kr​" target="_blank">링크4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="footer-bottom-info">
+					<ul>
+						<li>
+							<span>우)26464 강원특별자치도 원주시 세계로 10</span>
+							<span>TEL : 033-738-3000</span>
+						</li>
+						<li>
+							<span>사업자등록번호 : 202-81-50707</span>
+							<span>통신판매업신고 : 제2009-서울중구-1234호</span>
+						</li>
+						<li>
+							<span>COPYRIGHT © 2023 KOREA TOURISM <br class="is-m">ORGANIZATION. ALL RIGHTS RESERVED.</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>  
+	   
+	<script src="/usr/js/swiper.js"></script>
+</body>
+</html>

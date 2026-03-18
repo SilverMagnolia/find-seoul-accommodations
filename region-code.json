@@ -1,0 +1,70 @@
+[
+  {
+    "regionName": "서울특별시",
+    "regionCode": "STD01"
+  },
+  {
+    "regionName": "부산광역시",
+    "regionCode": "STD02"
+  },
+  {
+    "regionName": "대구광역시",
+    "regionCode": "STD03"
+  },
+  {
+    "regionName": "인천광역시",
+    "regionCode": "STD04"
+  },
+  {
+    "regionName": "광주광역시",
+    "regionCode": "STD05"
+  },
+  {
+    "regionName": "대전광역시",
+    "regionCode": "STD06"
+  },
+  {
+    "regionName": "울산광역시",
+    "regionCode": "STD07"
+  },
+  {
+    "regionName": "세종특별자치시",
+    "regionCode": "STD08"
+  },
+  {
+    "regionName": "경기도",
+    "regionCode": "STD09"
+  },
+  {
+    "regionName": "강원특별자치도",
+    "regionCode": "STD10"
+  },
+  {
+    "regionName": "충청북도",
+    "regionCode": "STD11"
+  },
+  {
+    "regionName": "충청남도",
+    "regionCode": "STD12"
+  },
+  {
+    "regionName": "전북특별자치도",
+    "regionCode": "STD13"
+  },
+  {
+    "regionName": "전라남도",
+    "regionCode": "STD14"
+  },
+  {
+    "regionName": "경상북도",
+    "regionCode": "STD15"
+  },
+  {
+    "regionName": "경상남도",
+    "regionCode": "STD16"
+  },
+  {
+    "regionName": "제주특별자치도",
+    "regionCode": "STD17"
+  }
+]
