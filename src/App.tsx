@@ -23,15 +23,19 @@ type RawCsvRow = {
   longitude?: string;
 };
 
-const DEFAULT_CSV_PATH = new URL(
-  "../crawling-data/seoul-accomodations/20260318-212418-with-latlng.csv",
-  import.meta.url
-).href;
+const CSV_CANDIDATE_PATHS = [
+  new URL("../crawling-data/seoul-accomodations/20260318-212418-with-latlng-jibun.csv", import.meta.url).href,
+  new URL("../crawling-data/seoul-accomodations/20260318-212418-with-latlng.csv.bak", import.meta.url).href
+];
 const SEOUL_CENTER = { lat: 37.5665, lng: 126.978 };
 const DEFAULT_LEVEL = 8;
 const KAKAO_APP_KEY = "bfa2d9d5c5b90ac2beca52007d6809ea";
 const POSITION_DECIMALS = 7;
 const CLUSTER_MODAL_MAX_ITEMS = 50;
+const GEOLOCATION_TIMEOUT_MS = 10000;
+const GEOLOCATION_MAXIMUM_AGE_MS = 30000;
+const CURRENT_LOCATION_BUTTON_IMAGE_SRC = "/images/cur-location.png";
+const CURRENT_LOCATION_MARKER_IMAGE_SRC = "/images/my-location.png";
 
 function extractDistrict(address: string): string {
   const match = address.match(/(?:서울특별시|서울시)\s*([^\s,]+)/);
@@ -66,7 +70,11 @@ async function loadRows(csvPath: string): Promise<AccommodationRow[]> {
     throw new Error(`CSV를 불러오지 못했습니다. path=${csvPath} status=${response.status}`);
   }
   const text = await response.text();
-  const parsed = Papa.parse<RawCsvRow>(text, { header: true, skipEmptyLines: true });
+  const trimmed = text.trimStart();
+  if (trimmed.startsWith("<!doctype html") === true || trimmed.startsWith("<html") === true) {
+    throw new Error(`CSV 파일이 아니라 HTML이 로드되었습니다. path=${csvPath}`);
+  }
+  const parsed = Papa.parse<RawCsvRow>(text, { header: true, skipEmptyLines: true, delimiter: "," });
   if (parsed.errors.length !== 0) {
     throw new Error(`CSV 파싱 실패: ${parsed.errors[0].message}`);
   }
@@ -125,6 +133,8 @@ export default function App() {
   const level = DEFAULT_LEVEL;
   const [selectedRowId, setSelectedRowId] = useState<number | null>(null);
   const [selectedClusterRows, setSelectedClusterRows] = useState<AccommodationRow[]>([]);
+  const [currentLocation, setCurrentLocation] = useState<{ lat: number; lng: number } | null>(null);
+  const [currentLocationLoading, setCurrentLocationLoading] = useState<boolean>(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -132,7 +142,24 @@ export default function App() {
       setLoading(true);
       setErrorMessage("");
       try {
-        const loadedRows = await loadRows(DEFAULT_CSV_PATH);
+        let loadedRows: AccommodationRow[] = [];
+        let lastError: Error | null = null;
+        for (const path of CSV_CANDIDATE_PATHS) {
+          try {
+            loadedRows = await loadRows(path);
+            lastError = null;
+            break;
+          } catch (error) {
+            if (error instanceof Error) {
+              lastError = error;
+            } else {
+              lastError = new Error("CSV 로드 중 알 수 없는 오류가 발생했습니다.");
+            }
+          }
+        }
+        if (lastError !== null && loadedRows.length === 0) {
+          throw lastError;
+        }
         if (cancelled === true) {
           return;
         }
@@ -153,6 +180,33 @@ export default function App() {
     run();
     return () => {
       cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (typeof navigator === "undefined" || "geolocation" in navigator !== true) {
+      return;
+    }
+    setCurrentLocationLoading(true);
+    const watchId = navigator.geolocation.watchPosition(
+      (position) => {
+        const lat = position.coords.latitude;
+        const lng = position.coords.longitude;
+        setCurrentLocation({ lat, lng });
+        setCurrentLocationLoading(false);
+      },
+      () => {
+        setCurrentLocationLoading(false);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: GEOLOCATION_TIMEOUT_MS,
+        maximumAge: GEOLOCATION_MAXIMUM_AGE_MS
+      }
+    );
+
+    return () => {
+      navigator.geolocation.clearWatch(watchId);
     };
   }, []);
 
@@ -365,6 +419,24 @@ export default function App() {
     setSelectedClusterRows([]);
   };
 
+  const moveToCurrentLocation = () => {
+    const map = mapRef.current;
+    if (map == null || currentLocation === null) {
+      return;
+    }
+    if (typeof window === "undefined" || window.kakao == null || window.kakao.maps == null) {
+      return;
+    }
+    const nextCenter = new window.kakao.maps.LatLng(currentLocation.lat, currentLocation.lng);
+    if (typeof map.panTo === "function") {
+      map.panTo(nextCenter);
+      return;
+    }
+    if (typeof map.setCenter === "function") {
+      map.setCenter(nextCenter);
+    }
+  };
+
   return (
     <div className="app">
       {kakaoLoading === false && kakaoError == null ? (
@@ -392,6 +464,17 @@ export default function App() {
               />
             ))}
           </MarkerClusterer>
+          {currentLocation !== null ? (
+            <MapMarker
+              position={{ lat: currentLocation.lat, lng: currentLocation.lng }}
+              image={{
+                src: CURRENT_LOCATION_MARKER_IMAGE_SRC,
+                size: { width: 42, height: 42 }
+              }}
+              clickable={true}
+              title="내 위치"
+            />
+          ) : null}
 
           {selectedRow !== null ? (
             <CustomOverlayMap position={{ lat: selectedRow.latitude, lng: selectedRow.longitude }} yAnchor={1.4}>
@@ -431,6 +514,16 @@ export default function App() {
         <span className="badge">
           {loading === true || kakaoLoading === true ? "로딩 중..." : `필터 결과 ${filteredRows.length.toLocaleString()}건`}
         </span>
+        <button
+          type="button"
+          className="location-button-plain"
+          onClick={moveToCurrentLocation}
+          disabled={currentLocation === null}
+          aria-label={currentLocationLoading === true && currentLocation === null ? "내 위치 확인 중" : "내 위치로 이동"}
+          title={currentLocationLoading === true && currentLocation === null ? "내 위치 확인 중" : "내 위치로 이동"}
+        >
+          <img src={CURRENT_LOCATION_BUTTON_IMAGE_SRC} alt="" className="location-button-icon" />
+        </button>
         <button type="button" className="action-button" onClick={openFilterModal}>
           서울시 구 {selectedDistricts.length.toLocaleString()}개 선택
         </button>
