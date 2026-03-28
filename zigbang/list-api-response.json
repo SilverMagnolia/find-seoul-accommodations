@@ -1,0 +1,1395 @@
+{
+  "items": [
+      {
+          "item_id": 48374080,
+          "section_type": null,
+          "images_thumbnail": "https://ic.zigbang.com/ic/items/48374080/1.jpg",
+          "sales_type": "월세",
+          "sales_title": "월세",
+          "deposit": 1000,
+          "rent": 65,
+          "size_m2": 40,
+          "공급면적": {
+              "m2": 40,
+              "p": "12.1"
+          },
+          "전용면적": {
+              "m2": 40,
+              "p": "12.1"
+          },
+          "계약면적": null,
+          "room_type_title": null,
+          "floor": "3",
+          "floor_string": "3",
+          "building_floor": "3",
+          "title": "Q.상월곡역1분  Q.3층 방2 Q. 빠른입주가능",
+          "is_first_movein": null,
+          "room_type": "04",
+          "status": true,
+          "tags": [
+              "추천"
+          ],
+          "service_type": "빌라",
+          "random_location": {
+              "lat": 37.607403920015,
+              "lng": 127.051662065255
+          },
+          "location": {
+              "lat": 37.607403920015,
+              "lng": 127.051662065255
+          },
+          "manage_cost": "20000",
+          "reg_date": "2026-03-18T18:19:09+09:00",
+          "is_new": true,
+          "addressOrigin": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "석관동",
+              "local4": "",
+              "address2": "338-179",
+              "localText": "성북구 석관동",
+              "fullText": "서울시 성북구 석관동"
+          },
+          "address": "성북구 석관동",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 0
+          },
+          "contract": "",
+          "is_zzim": false,
+          "address1": "서울시 성북구 석관동",
+          "address2": null,
+          "address3": null,
+          "item_bm_type": "ZIGBANG",
+          "lessorTypes": [],
+          "badges": [
+              "ITEM_VERIFICATION"
+          ]
+      },
+      {
+          "item_id": 48359324,
+          "section_type": null,
+          "images_thumbnail": "https://ic.zigbang.com/ic/items/48359324/1.jpg",
+          "sales_type": "전세",
+          "sales_title": "전세",
+          "deposit": 26000,
+          "rent": 0,
+          "size_m2": 27.1,
+          "공급면적": {
+              "m2": 27.1,
+              "p": "8.2"
+          },
+          "전용면적": {
+              "m2": 27.1,
+              "p": "8.2"
+          },
+          "계약면적": null,
+          "room_type_title": null,
+          "floor": "4",
+          "floor_string": "4",
+          "building_floor": "4",
+          "title": "초역세권테라스있는복층형신축3룸.일반대출가능",
+          "is_first_movein": null,
+          "room_type": "05",
+          "status": true,
+          "tags": [
+              "추천"
+          ],
+          "service_type": "빌라",
+          "random_location": {
+              "lat": 37.6062497745281,
+              "lng": 127.052631142351
+          },
+          "location": {
+              "lat": 37.6062497745281,
+              "lng": 127.052631142351
+          },
+          "manage_cost": "60000",
+          "reg_date": "2026-03-19T17:25:51+09:00",
+          "is_new": true,
+          "addressOrigin": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "석관동",
+              "local4": "",
+              "address2": "338-165",
+              "localText": "성북구 석관동",
+              "fullText": "서울시 성북구 석관동"
+          },
+          "address": "성북구 석관동",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 0
+          },
+          "contract": "",
+          "is_zzim": false,
+          "address1": "서울시 성북구 석관동",
+          "address2": null,
+          "address3": null,
+          "item_bm_type": "ZIGBANG",
+          "lessorTypes": [],
+          "badges": [
+              "ITEM_VERIFICATION"
+          ]
+      },
+      {
+          "item_id": 48359328,
+          "section_type": null,
+          "images_thumbnail": "https://ic.zigbang.com/ic/items/48359328/1.jpg",
+          "sales_type": "월세",
+          "sales_title": "월세",
+          "deposit": 3000,
+          "rent": 110,
+          "size_m2": 29.72,
+          "공급면적": {
+              "m2": 29.72,
+              "p": "9"
+          },
+          "전용면적": {
+              "m2": 29.72,
+              "p": "9"
+          },
+          "계약면적": null,
+          "room_type_title": null,
+          "floor": "8",
+          "floor_string": "8",
+          "building_floor": "12",
+          "title": "특가세대ㅣ미니테라스ㅣ풀옵션ㅣ예쁜 신축",
+          "is_first_movein": null,
+          "room_type": "04",
+          "status": true,
+          "tags": [
+              "추천"
+          ],
+          "service_type": "빌라",
+          "random_location": {
+              "lat": 37.6119366905897,
+              "lng": 127.057907691118
+          },
+          "location": {
+              "lat": 37.6119366905897,
+              "lng": 127.057907691118
+          },
+          "manage_cost": "80000",
+          "reg_date": "2026-03-17T16:21:20+09:00",
+          "is_new": false,
+          "addressOrigin": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "50-39",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "address": "성북구 장위동",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": true,
+              "readAt": "2026-03-19T13:04:54.853Z",
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 0
+          },
+          "contract": "",
+          "is_zzim": false,
+          "address1": "서울시 성북구 장위동",
+          "address2": null,
+          "address3": null,
+          "item_bm_type": "ZIGBANG",
+          "lessorTypes": [],
+          "badges": []
+      },
+      {
+          "item_id": 48354598,
+          "section_type": null,
+          "images_thumbnail": "https://ic.zigbang.com/ic/items/48354598/1.jpg",
+          "sales_type": "월세",
+          "sales_title": "월세",
+          "deposit": 5000,
+          "rent": 30,
+          "size_m2": 26.44,
+          "공급면적": {
+              "m2": 26.44,
+              "p": "8"
+          },
+          "전용면적": {
+              "m2": 26.44,
+              "p": "8"
+          },
+          "계약면적": null,
+          "room_type_title": null,
+          "floor": "옥탑방",
+          "floor_string": "옥탑방",
+          "building_floor": "3",
+          "title": "돌곶이역, 한예종인근 실사용 공간 넓은 2룸 다가구 주택입",
+          "is_first_movein": null,
+          "room_type": "04",
+          "status": true,
+          "tags": [
+              "추천"
+          ],
+          "service_type": "빌라",
+          "random_location": {
+              "lat": 37.608521071939,
+              "lng": 127.057289962008
+          },
+          "location": {
+              "lat": 37.608521071939,
+              "lng": 127.057289962008
+          },
+          "manage_cost": null,
+          "reg_date": "2026-03-17T13:06:34+09:00",
+          "is_new": false,
+          "addressOrigin": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "석관동",
+              "local4": "",
+              "address2": "340-171",
+              "localText": "성북구 석관동",
+              "fullText": "서울시 성북구 석관동"
+          },
+          "address": "성북구 석관동",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 0
+          },
+          "contract": "",
+          "is_zzim": false,
+          "address1": "서울시 성북구 석관동",
+          "address2": null,
+          "address3": null,
+          "item_bm_type": "ZIGBANG",
+          "lessorTypes": [],
+          "badges": []
+      },
+      {
+          "item_id": 48145957,
+          "section_type": null,
+          "images_thumbnail": "https://ic.zigbang.com/ic/items/48145957/1.jpg",
+          "sales_type": "전세",
+          "sales_title": "전세",
+          "deposit": 25000,
+          "rent": 0,
+          "size_m2": 27.99,
+          "공급면적": {
+              "m2": 27.99,
+              "p": "8.5"
+          },
+          "전용면적": {
+              "m2": 27.99,
+              "p": "8.5"
+          },
+          "계약면적": null,
+          "room_type_title": null,
+          "floor": "2",
+          "floor_string": "2",
+          "building_floor": "6",
+          "title": "융자없이 깔끔한 빌라 전세 풀옵션",
+          "is_first_movein": null,
+          "room_type": "04",
+          "status": true,
+          "tags": [
+              "추천"
+          ],
+          "service_type": "빌라",
+          "random_location": {
+              "lat": 37.6100070778317,
+              "lng": 127.052435591998
+          },
+          "location": {
+              "lat": 37.6100070778317,
+              "lng": 127.052435591998
+          },
+          "manage_cost": "20000",
+          "reg_date": "2026-02-27T20:49:50+09:00",
+          "is_new": false,
+          "addressOrigin": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "66-276",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "address": "성북구 장위동",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 0
+          },
+          "contract": "",
+          "is_zzim": false,
+          "address1": "서울시 성북구 장위동",
+          "address2": null,
+          "address3": null,
+          "item_bm_type": "ZIGBANG",
+          "lessorTypes": [],
+          "badges": []
+      },
+      {
+          "item_id": 48386789,
+          "section_type": null,
+          "images_thumbnail": "https://ic.zigbang.com/ic/items/48386789/1.jpg",
+          "sales_type": "월세",
+          "sales_title": "월세",
+          "deposit": 17500,
+          "rent": 15,
+          "size_m2": 52.28,
+          "공급면적": {
+              "m2": 52.28,
+              "p": "15.8"
+          },
+          "전용면적": {
+              "m2": 52.28,
+              "p": "15.8"
+          },
+          "계약면적": null,
+          "room_type_title": null,
+          "floor": "4",
+          "floor_string": "4",
+          "building_floor": "4",
+          "title": "LHSH및 모든전세대출 보증보험OK. 주차가능한 3룸",
+          "is_first_movein": null,
+          "room_type": "05",
+          "status": true,
+          "tags": [],
+          "service_type": "빌라",
+          "random_location": {
+              "lat": 37.6118316774854,
+              "lng": 127.047972213638
+          },
+          "location": {
+              "lat": 37.6118316774854,
+              "lng": 127.047972213638
+          },
+          "manage_cost": "20000",
+          "reg_date": "2026-03-19T17:35:13+09:00",
+          "is_new": true,
+          "addressOrigin": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "233-457",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "address": "성북구 장위동",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 0
+          },
+          "contract": "",
+          "is_zzim": false,
+          "address1": "서울시 성북구 장위동",
+          "address2": null,
+          "address3": null,
+          "item_bm_type": "ZIGBANG",
+          "lessorTypes": [],
+          "badges": []
+      },
+      {
+          "item_id": 48170290,
+          "section_type": null,
+          "images_thumbnail": "https://ic.zigbang.com/ic/items/48170290/1.jpg",
+          "sales_type": "전세",
+          "sales_title": "전세",
+          "deposit": 21000,
+          "rent": 0,
+          "size_m2": 29.21,
+          "공급면적": {
+              "m2": 29.21,
+              "p": "8.8"
+          },
+          "전용면적": {
+              "m2": 29.21,
+              "p": "8.8"
+          },
+          "계약면적": null,
+          "room_type_title": null,
+          "floor": "4",
+          "floor_string": "4",
+          "building_floor": "5",
+          "title": "초역세권 LHSH및허그버팀목가능한신축2룸",
+          "is_first_movein": null,
+          "room_type": "04",
+          "status": true,
+          "tags": [],
+          "service_type": "빌라",
+          "random_location": {
+              "lat": 37.6111984949508,
+              "lng": 127.053947740226
+          },
+          "location": {
+              "lat": 37.6111984949508,
+              "lng": 127.053947740226
+          },
+          "manage_cost": "60000",
+          "reg_date": "2026-03-11T13:43:54+09:00",
+          "is_new": false,
+          "addressOrigin": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "66-116",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "address": "성북구 장위동",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 0
+          },
+          "contract": "",
+          "is_zzim": false,
+          "address1": "서울시 성북구 장위동",
+          "address2": null,
+          "address3": null,
+          "item_bm_type": "ZIGBANG",
+          "lessorTypes": [],
+          "badges": []
+      },
+      {
+          "item_id": 48171766,
+          "section_type": null,
+          "images_thumbnail": "https://ic.zigbang.com/ic/items/48171766/1.jpg",
+          "sales_type": "전세",
+          "sales_title": "전세",
+          "deposit": 21000,
+          "rent": 0,
+          "size_m2": 29.21,
+          "공급면적": {
+              "m2": 29.21,
+              "p": "8.8"
+          },
+          "전용면적": {
+              "m2": 29.21,
+              "p": "8.8"
+          },
+          "계약면적": null,
+          "room_type_title": null,
+          "floor": "4",
+          "floor_string": "4",
+          "building_floor": "5",
+          "title": "LHSH허그버팀목등모든대출및보증보험가능한역세권신축2룸빌라",
+          "is_first_movein": null,
+          "room_type": "04",
+          "status": true,
+          "tags": [],
+          "service_type": "빌라",
+          "random_location": {
+              "lat": 37.6111984949508,
+              "lng": 127.053947740226
+          },
+          "location": {
+              "lat": 37.6111984949508,
+              "lng": 127.053947740226
+          },
+          "manage_cost": "50000",
+          "reg_date": "2026-03-02T17:33:54+09:00",
+          "is_new": false,
+          "addressOrigin": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "66-116",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "address": "성북구 장위동",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 0
+          },
+          "contract": "",
+          "is_zzim": false,
+          "address1": "서울시 성북구 장위동",
+          "address2": null,
+          "address3": null,
+          "item_bm_type": "ZIGBANG",
+          "lessorTypes": [],
+          "badges": []
+      },
+      {
+          "item_id": 48228207,
+          "section_type": null,
+          "images_thumbnail": "https://ic.zigbang.com/ic/items/48228207/1.jpg",
+          "sales_type": "월세",
+          "sales_title": "월세",
+          "deposit": 17500,
+          "rent": 15,
+          "size_m2": 52.28,
+          "공급면적": {
+              "m2": 52.28,
+              "p": "15.8"
+          },
+          "전용면적": {
+              "m2": 52.28,
+              "p": "15.8"
+          },
+          "계약면적": null,
+          "room_type_title": null,
+          "floor": "4",
+          "floor_string": "4",
+          "building_floor": "4",
+          "title": "허그버팀목LHSH모든대출및보증보험가능역세권3룸구축빌라",
+          "is_first_movein": null,
+          "room_type": "05",
+          "status": true,
+          "tags": [],
+          "service_type": "빌라",
+          "random_location": {
+              "lat": 37.6118316774854,
+              "lng": 127.047972213638
+          },
+          "location": {
+              "lat": 37.6118316774854,
+              "lng": 127.047972213638
+          },
+          "manage_cost": "20000",
+          "reg_date": "2026-03-18T13:49:31+09:00",
+          "is_new": true,
+          "addressOrigin": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "233-457",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "address": "성북구 장위동",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 0
+          },
+          "contract": "",
+          "is_zzim": false,
+          "address1": "서울시 성북구 장위동",
+          "address2": null,
+          "address3": null,
+          "item_bm_type": "ZIGBANG",
+          "lessorTypes": [],
+          "badges": []
+      },
+      {
+          "item_id": 48250401,
+          "section_type": null,
+          "images_thumbnail": "https://ic.zigbang.com/ic/items/48250401/1.jpg",
+          "sales_type": "월세",
+          "sales_title": "월세",
+          "deposit": 1000,
+          "rent": 40,
+          "size_m2": 37,
+          "공급면적": {
+              "m2": 37,
+              "p": "11.2"
+          },
+          "전용면적": {
+              "m2": 37,
+              "p": "11.2"
+          },
+          "계약면적": null,
+          "room_type_title": null,
+          "floor": "반지하",
+          "floor_string": "반지하",
+          "building_floor": "2",
+          "title": "즉시입주 가능, 반지층 투룸.",
+          "is_first_movein": null,
+          "room_type": "04",
+          "status": true,
+          "tags": [],
+          "service_type": "빌라",
+          "random_location": {
+              "lat": 37.6116017038577,
+              "lng": 127.052513274242
+          },
+          "location": {
+              "lat": 37.6116017038577,
+              "lng": 127.052513274242
+          },
+          "manage_cost": null,
+          "reg_date": "2026-03-09T10:46:55+09:00",
+          "is_new": false,
+          "addressOrigin": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "68-82",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "address": "성북구 장위동",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 0
+          },
+          "contract": "",
+          "is_zzim": false,
+          "address1": "서울시 성북구 장위동",
+          "address2": null,
+          "address3": null,
+          "item_bm_type": "ZIGBANG",
+          "lessorTypes": [],
+          "badges": []
+      },
+      {
+          "item_id": 48240416,
+          "section_type": null,
+          "images_thumbnail": "https://ic.zigbang.com/ic/items/48240416/1.jpg",
+          "sales_type": "매매",
+          "sales_title": "매매",
+          "deposit": 25200,
+          "rent": 0,
+          "size_m2": 29.26,
+          "공급면적": {
+              "m2": 29.26,
+              "p": "8.9"
+          },
+          "전용면적": {
+              "m2": 29.26,
+              "p": "8.9"
+          },
+          "계약면적": null,
+          "room_type_title": null,
+          "floor": "2",
+          "floor_string": "2",
+          "building_floor": "4",
+          "title": "신혼부부, 넓은 거실, 역세권, 살기 넉넉한 투룸",
+          "is_first_movein": null,
+          "room_type": "04",
+          "status": true,
+          "tags": [],
+          "service_type": "빌라",
+          "random_location": {
+              "lat": 37.6063354556396,
+              "lng": 127.052435506027
+          },
+          "location": {
+              "lat": 37.6063354556396,
+              "lng": 127.052435506027
+          },
+          "manage_cost": "50000",
+          "reg_date": "2026-03-19T02:59:44+09:00",
+          "is_new": true,
+          "addressOrigin": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "석관동",
+              "local4": "",
+              "address2": "333-343",
+              "localText": "성북구 석관동",
+              "fullText": "서울시 성북구 석관동"
+          },
+          "address": "성북구 석관동",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 0
+          },
+          "contract": "",
+          "is_zzim": false,
+          "address1": "서울시 성북구 석관동",
+          "address2": null,
+          "address3": null,
+          "item_bm_type": "ZIGBANG",
+          "lessorTypes": [],
+          "badges": []
+      }
+  ],
+  "itemSummaries": [
+      {
+          "id": 48374080,
+          "serviceType": "빌라",
+          "title": "Q.상월곡역1분  Q.3층 방2 Q. 빠른입주가능",
+          "imagesThumbnail": "https://ic.zigbang.com/ic/items/48374080/1.jpg",
+          "badges": [
+              "ITEM_VERIFICATION",
+              "RECOMMEND"
+          ],
+          "price": {
+              "salesType": "월세",
+              "deposit": 1000,
+              "rent": 65,
+              "isShortTerm": false,
+              "manageCost": 20000
+          },
+          "status": true,
+          "bmType": "ZIGBANG",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 7
+          },
+          "address": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "석관동",
+              "local4": "",
+              "address2": "338-179",
+              "localText": "성북구 석관동",
+              "fullText": "서울시 성북구 석관동"
+          },
+          "residence": {
+              "sizeM2": 40,
+              "sizeSupply": {
+                  "m2": 40,
+                  "p": "12.1"
+              },
+              "sizeExclusive": {
+                  "m2": 40,
+                  "p": "12.1"
+              },
+              "floor": "3",
+              "buildingFloor": "3",
+              "roomType": "04"
+          }
+      },
+      {
+          "id": 48359324,
+          "serviceType": "빌라",
+          "title": "초역세권테라스있는복층형신축3룸.일반대출가능",
+          "imagesThumbnail": "https://ic.zigbang.com/ic/items/48359324/1.jpg",
+          "badges": [
+              "ITEM_VERIFICATION",
+              "RECOMMEND"
+          ],
+          "price": {
+              "salesType": "전세",
+              "deposit": 26000,
+              "isShortTerm": false,
+              "manageCost": 60000
+          },
+          "status": true,
+          "bmType": "ZIGBANG",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 7
+          },
+          "address": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "석관동",
+              "local4": "",
+              "address2": "338-165",
+              "localText": "성북구 석관동",
+              "fullText": "서울시 성북구 석관동"
+          },
+          "residence": {
+              "sizeM2": 27.1,
+              "sizeSupply": {
+                  "m2": 27.1,
+                  "p": "8.2"
+              },
+              "sizeExclusive": {
+                  "m2": 27.1,
+                  "p": "8.2"
+              },
+              "floor": "4",
+              "buildingFloor": "4",
+              "roomType": "05"
+          }
+      },
+      {
+          "id": 48359328,
+          "serviceType": "빌라",
+          "title": "특가세대ㅣ미니테라스ㅣ풀옵션ㅣ예쁜 신축",
+          "imagesThumbnail": "https://ic.zigbang.com/ic/items/48359328/1.jpg",
+          "badges": [
+              "RECOMMEND"
+          ],
+          "price": {
+              "salesType": "월세",
+              "deposit": 3000,
+              "rent": 110,
+              "isShortTerm": false,
+              "manageCost": 80000
+          },
+          "status": true,
+          "bmType": "ZIGBANG",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": true,
+              "readAt": "2026-03-19T13:04:54.853Z",
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 9
+          },
+          "address": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "50-39",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "residence": {
+              "sizeM2": 29.72,
+              "sizeSupply": {
+                  "m2": 29.72,
+                  "p": "9"
+              },
+              "sizeExclusive": {
+                  "m2": 29.72,
+                  "p": "9"
+              },
+              "floor": "8",
+              "buildingFloor": "12",
+              "roomType": "04"
+          }
+      },
+      {
+          "id": 48354598,
+          "serviceType": "빌라",
+          "title": "돌곶이역, 한예종인근 실사용 공간 넓은 2룸 다가구 주택입",
+          "imagesThumbnail": "https://ic.zigbang.com/ic/items/48354598/1.jpg",
+          "badges": [
+              "RECOMMEND"
+          ],
+          "price": {
+              "salesType": "월세",
+              "deposit": 5000,
+              "rent": 30,
+              "isShortTerm": false
+          },
+          "status": true,
+          "bmType": "ZIGBANG",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 3
+          },
+          "address": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "석관동",
+              "local4": "",
+              "address2": "340-171",
+              "localText": "성북구 석관동",
+              "fullText": "서울시 성북구 석관동"
+          },
+          "residence": {
+              "sizeM2": 26.44,
+              "sizeSupply": {
+                  "m2": 26.44,
+                  "p": "8"
+              },
+              "sizeExclusive": {
+                  "m2": 26.44,
+                  "p": "8"
+              },
+              "floor": "옥탑방",
+              "buildingFloor": "3",
+              "roomType": "04"
+          }
+      },
+      {
+          "id": 48145957,
+          "serviceType": "빌라",
+          "title": "융자없이 깔끔한 빌라 전세 풀옵션",
+          "imagesThumbnail": "https://ic.zigbang.com/ic/items/48145957/1.jpg",
+          "badges": [
+              "RECOMMEND"
+          ],
+          "price": {
+              "salesType": "전세",
+              "deposit": 25000,
+              "isShortTerm": false,
+              "manageCost": 20000
+          },
+          "status": true,
+          "bmType": "ZIGBANG",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 26
+          },
+          "address": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "66-276",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "residence": {
+              "sizeM2": 27.99,
+              "sizeSupply": {
+                  "m2": 27.99,
+                  "p": "8.5"
+              },
+              "sizeExclusive": {
+                  "m2": 27.99,
+                  "p": "8.5"
+              },
+              "floor": "2",
+              "buildingFloor": "6",
+              "roomType": "04"
+          }
+      },
+      {
+          "id": 48386789,
+          "serviceType": "빌라",
+          "title": "LHSH및 모든전세대출 보증보험OK. 주차가능한 3룸",
+          "imagesThumbnail": "https://ic.zigbang.com/ic/items/48386789/1.jpg",
+          "price": {
+              "salesType": "월세",
+              "deposit": 17500,
+              "rent": 15,
+              "isShortTerm": false,
+              "manageCost": 20000
+          },
+          "status": true,
+          "bmType": "ZIGBANG",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 1
+          },
+          "address": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "233-457",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "residence": {
+              "sizeM2": 52.28,
+              "sizeSupply": {
+                  "m2": 52.28,
+                  "p": "15.8"
+              },
+              "sizeExclusive": {
+                  "m2": 52.28,
+                  "p": "15.8"
+              },
+              "floor": "4",
+              "buildingFloor": "4",
+              "roomType": "05"
+          }
+      },
+      {
+          "id": 48170290,
+          "serviceType": "빌라",
+          "title": "초역세권 LHSH및허그버팀목가능한신축2룸",
+          "imagesThumbnail": "https://ic.zigbang.com/ic/items/48170290/1.jpg",
+          "price": {
+              "salesType": "전세",
+              "deposit": 21000,
+              "isShortTerm": false,
+              "manageCost": 60000
+          },
+          "status": true,
+          "bmType": "ZIGBANG",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 38
+          },
+          "address": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "66-116",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "residence": {
+              "sizeM2": 29.21,
+              "sizeSupply": {
+                  "m2": 29.21,
+                  "p": "8.8"
+              },
+              "sizeExclusive": {
+                  "m2": 29.21,
+                  "p": "8.8"
+              },
+              "floor": "4",
+              "buildingFloor": "5",
+              "roomType": "04"
+          }
+      },
+      {
+          "id": 48171766,
+          "serviceType": "빌라",
+          "title": "LHSH허그버팀목등모든대출및보증보험가능한역세권신축2룸빌라",
+          "imagesThumbnail": "https://ic.zigbang.com/ic/items/48171766/1.jpg",
+          "price": {
+              "salesType": "전세",
+              "deposit": 21000,
+              "isShortTerm": false,
+              "manageCost": 50000
+          },
+          "status": true,
+          "bmType": "ZIGBANG",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 33
+          },
+          "address": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "66-116",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "residence": {
+              "sizeM2": 29.21,
+              "sizeSupply": {
+                  "m2": 29.21,
+                  "p": "8.8"
+              },
+              "sizeExclusive": {
+                  "m2": 29.21,
+                  "p": "8.8"
+              },
+              "floor": "4",
+              "buildingFloor": "5",
+              "roomType": "04"
+          }
+      },
+      {
+          "id": 48228207,
+          "serviceType": "빌라",
+          "title": "허그버팀목LHSH모든대출및보증보험가능역세권3룸구축빌라",
+          "imagesThumbnail": "https://ic.zigbang.com/ic/items/48228207/1.jpg",
+          "price": {
+              "salesType": "월세",
+              "deposit": 17500,
+              "rent": 15,
+              "isShortTerm": false,
+              "manageCost": 20000
+          },
+          "status": true,
+          "bmType": "ZIGBANG",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 17
+          },
+          "address": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "233-457",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "residence": {
+              "sizeM2": 52.28,
+              "sizeSupply": {
+                  "m2": 52.28,
+                  "p": "15.8"
+              },
+              "sizeExclusive": {
+                  "m2": 52.28,
+                  "p": "15.8"
+              },
+              "floor": "4",
+              "buildingFloor": "4",
+              "roomType": "05"
+          }
+      },
+      {
+          "id": 48250401,
+          "serviceType": "빌라",
+          "title": "즉시입주 가능, 반지층 투룸.",
+          "imagesThumbnail": "https://ic.zigbang.com/ic/items/48250401/1.jpg",
+          "price": {
+              "salesType": "월세",
+              "deposit": 1000,
+              "rent": 40,
+              "isShortTerm": false
+          },
+          "status": true,
+          "bmType": "ZIGBANG",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 7
+          },
+          "address": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "장위동",
+              "local4": "",
+              "address2": "68-82",
+              "localText": "성북구 장위동",
+              "fullText": "서울시 성북구 장위동"
+          },
+          "residence": {
+              "sizeM2": 37,
+              "sizeSupply": {
+                  "m2": 37,
+                  "p": "11.2"
+              },
+              "sizeExclusive": {
+                  "m2": 37,
+                  "p": "11.2"
+              },
+              "floor": "반지하",
+              "buildingFloor": "2",
+              "roomType": "04"
+          }
+      },
+      {
+          "id": 48240416,
+          "serviceType": "빌라",
+          "title": "신혼부부, 넓은 거실, 역세권, 살기 넉넉한 투룸",
+          "imagesThumbnail": "https://ic.zigbang.com/ic/items/48240416/1.jpg",
+          "price": {
+              "salesType": "매매",
+              "deposit": 25200,
+              "isShortTerm": false,
+              "manageCost": 50000
+          },
+          "status": true,
+          "bmType": "ZIGBANG",
+          "action": {
+              "isChecked": false,
+              "checkedAt": null,
+              "isRead": false,
+              "readAt": null,
+              "isInquired": false,
+              "inquiredAt": null,
+              "isRewarded": false,
+              "rewardedAt": null,
+              "isReported": false,
+              "reportedAt": null,
+              "isZzim": false,
+              "zzimCount": 6
+          },
+          "address": {
+              "local1": "서울시",
+              "local2": "성북구",
+              "local3": "석관동",
+              "local4": "",
+              "address2": "333-343",
+              "localText": "성북구 석관동",
+              "fullText": "서울시 성북구 석관동"
+          },
+          "residence": {
+              "sizeM2": 29.26,
+              "sizeSupply": {
+                  "m2": 29.26,
+                  "p": "8.9"
+              },
+              "sizeExclusive": {
+                  "m2": 29.26,
+                  "p": "8.9"
+              },
+              "floor": "2",
+              "buildingFloor": "4",
+              "roomType": "04"
+          }
+      }
+  ],
+  "totalCount": 11
+}

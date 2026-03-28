@@ -216,3 +216,97 @@ npm run dev
 - 요청 실패 시 재시도 때문에 속도가 내려갈 수 있습니다.
 - 같은 입력 파일로 다시 실행하면 캐시를 재사용해 이후 실행은 빨라집니다.
 - 너무 느리면 `--request-per-second` 값을 낮춰(예: `5`) 안정적으로 실행하세요.
+
+## 10) 위경도 -> 지번주소(카카오 역지오코딩)
+
+`latitude`, `longitude`를 카카오 `coord2address` API로 변환해 `지번주소` 컬럼을 추가합니다.
+
+- 문서: [Kakao Local API - 좌표로 주소 변환](https://developers.kakao.com/docs/latest/ko/local/dev-guide#coord-to-address)
+- 엔드포인트: `GET /v2/local/geo/coord2address.json`
+- 인증 헤더: `Authorization: KakaoAK {REST_API_KEY}`
+
+### 실행
+
+```bash
+python3 -u scripts/reverse_geocode_csv_kakao.py \
+  --input "crawling-data/seoul-accomodations/20260318-212418-with-latlng.csv" \
+  --output "crawling-data/seoul-accomodations/20260318-212418-with-latlng-jibun.csv" \
+  --request-per-second 8 \
+  --retries 4
+```
+
+### 특징
+
+- `지번주소` 컬럼을 `주소` 바로 옆에 삽입
+- 좌표 캐시 사용: `crawling-data/geocode-cache/kakao-coord2address-cache.json`
+- 실패 로그: `crawling-data/geocode-cache/reverse-geocode-failed.csv`
+- API 응답 100건마다 캐시/CSV flush
+
+## 11) 직방 전월세 건물 매칭
+
+CSV 각 업체의 좌표/지번주소를 사용해 직방 API로 같은 건물의 전월세 매물 존재를 판정합니다.
+
+### 사용 스크립트
+
+- `scripts/check_zigbang_building_listings.py`
+
+### 핵심 흐름
+
+1. 업체 좌표 -> geohash 변환
+2. `GET /house/property/v1/items/villas`로 후보 itemId 수집
+3. `POST /house/property/v1/items/list`로 상세 조회
+4. 지번주소 정규화 키 비교 + A/B/C 매칭 규칙 적용
+5. 필요 시 인접 geohash 보정(기본 활성화)
+
+### 실행 예시(전체)
+
+```bash
+python3 -u scripts/check_zigbang_building_listings.py \
+  --input "crawling-data/seoul-accomodations/20260318-212418-with-latlng-jibun.csv" \
+  --output-root "output" \
+  --sample-size 0 \
+  --geohash-precision 5 \
+  --request-per-second 6 \
+  --villas-workers 8 \
+  --list-workers 3 \
+  --item-id-batch-size 100 \
+  --flush-every 30
+```
+
+### 실행 예시(샘플)
+
+```bash
+python3 -u scripts/check_zigbang_building_listings.py \
+  --input "crawling-data/seoul-accomodations/20260318-212418-with-latlng-jibun.csv" \
+  --output-root "output" \
+  --sample-size 100 \
+  --seed 42
+```
+
+### 결과 파일
+
+- `output/YYYY-MM-DD HH-MM/matched.json`
+- `output/YYYY-MM-DD HH-MM/unmatched.json`
+- `output/YYYY-MM-DD HH-MM/geohash-cache.json`
+- `output/YYYY-MM-DD HH-MM/progress.json`
+
+### 주요 옵션
+
+- `--sample-size`: 샘플 실행 크기 (`0`이면 전체)
+- `--seed`: 샘플 실행 시 랜덤 시드(같은 샘플 재현용)
+- `--distance-b`: B레벨 매칭 거리(기본 `20m`)
+- `--distance-c`: C레벨 매칭 거리(기본 `12m`)
+- `--disable-neighbor-fallback`: 인접 geohash 보정 비활성화
+
+### `match_levels` 의미
+
+`matched.json`의 `match_levels`는 해당 업체가 어떤 규칙 레벨로 매칭되었는지 나타냅니다.
+
+- `A`: `구 + 동 + 본번 + 부번` 완전 일치 (`FULL_JIBUN_MATCH`)
+- `B`: `구 + 동 + 본번` 일치 + (부번 한쪽 누락) + `distance <= --distance-b`
+- `C`: `구 + 동` 일치 + `distance <= --distance-c`
+
+참고:
+
+- `match_levels`는 배열이므로 한 업체에 여러 레벨이 동시에 존재할 수 있습니다.
+- 각 매물 단위의 레벨은 `matched_items[].match_level`에 기록됩니다.
