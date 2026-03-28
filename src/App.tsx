@@ -34,8 +34,9 @@ const POSITION_DECIMALS = 7;
 const CLUSTER_MODAL_MAX_ITEMS = 50;
 const GEOLOCATION_TIMEOUT_MS = 10000;
 const GEOLOCATION_MAXIMUM_AGE_MS = 30000;
-const CURRENT_LOCATION_BUTTON_IMAGE_SRC = "/images/cur-location.png";
-const CURRENT_LOCATION_MARKER_IMAGE_SRC = "/images/my-location.png";
+const BASE_URL = import.meta.env.BASE_URL;
+const CURRENT_LOCATION_BUTTON_IMAGE_SRC = `${BASE_URL}images/cur-location.png`;
+const CURRENT_LOCATION_MARKER_IMAGE_SRC = `${BASE_URL}images/my-location.png`;
 
 function extractDistrict(address: string): string {
   const match = address.match(/(?:서울특별시|서울시)\s*([^\s,]+)/);
