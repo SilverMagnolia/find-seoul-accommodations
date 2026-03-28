@@ -1,0 +1,4425 @@
+{
+  "count": 119,
+  "results": [
+    {
+      "row_index": 21,
+      "업소명": "더심플하우스",
+      "주소": "[157811] 서울특별시 강서구 공항대로5길 34, 3층 (공항동)",
+      "지번주소": "서울 강서구 공항동 24-4",
+      "latitude": "37.561733670329",
+      "longitude": "126.812959852169",
+      "geohash": "wydjt",
+      "villas_item_count": 27,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48261590,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 3.4220354321090483
+        }
+      ],
+      "nearest_distance_m": 3.4220354321090483,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 79,
+      "업소명": "포근",
+      "주소": "서울특별시 강동구 구천면로34길 52, 에덴빌32차 302호 (천호동)",
+      "지번주소": "서울 강동구 천호동 210-18",
+      "latitude": "37.5424180507441",
+      "longitude": "127.134138994152",
+      "geohash": "wydmt",
+      "villas_item_count": 161,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48393075,
+          "sales_type": "전세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 10.061162994427297
+        }
+      ],
+      "nearest_distance_m": 10.061162994427297,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 143,
+      "업소명": "LUMINA",
+      "주소": "서울특별시 마포구 월드컵로11길 72, 4층 401호 (망원동)",
+      "지번주소": "서울 마포구 망원동 413-50",
+      "latitude": "37.5538886806652",
+      "longitude": "126.907123511773",
+      "geohash": "wydjx",
+      "villas_item_count": 112,
+      "listing_exists": true,
+      "match_count": 3,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48309958,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.3406238624719874
+        },
+        {
+          "item_id": 48150365,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.3406238624719874
+        },
+        {
+          "item_id": 48150389,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.3406238624719874
+        }
+      ],
+      "nearest_distance_m": 0.3406238624719874,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 151,
+      "업소명": "소울 오브 서울",
+      "주소": "서울특별시 은평구 갈현로45길 30, 1층 나호 (갈현동)",
+      "지번주소": "서울 은평구 갈현동 12-437",
+      "latitude": "37.6278717537864",
+      "longitude": "126.916039571106",
+      "geohash": "wydq0",
+      "villas_item_count": 130,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48295516,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 11.615693086831813
+        }
+      ],
+      "nearest_distance_m": 11.615693086831813,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 169,
+      "업소명": "3베드 레지던스역삼",
+      "주소": "서울특별시 강남구 역삼로17길 35, 402호 (역삼동, 더클래스)",
+      "지번주소": "서울 강남구 역삼동 744-17",
+      "latitude": "37.4971520195133",
+      "longitude": "127.036486527622",
+      "geohash": "wydm6",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48200304,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.8090581311358086
+        },
+        {
+          "item_id": 48145582,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.8090581311358086
+        }
+      ],
+      "nearest_distance_m": 0.8090581311358086,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 174,
+      "업소명": "스테이 감",
+      "주소": "서울특별시 동대문구 망우로12라길 38, 203호 (휘경동, 로즈힐)",
+      "지번주소": "서울 동대문구 휘경동 295-84",
+      "latitude": "37.5862080024805",
+      "longitude": "127.058624362869",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48362643,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 2.3848159628291254
+        }
+      ],
+      "nearest_distance_m": 2.3848159628291254,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 181,
+      "업소명": "미까사",
+      "주소": "서울특별시 송파구 삼학사로8길 23, 303호 (석촌동)",
+      "지번주소": "서울 송파구 석촌동 230-18",
+      "latitude": "37.5003147602102",
+      "longitude": "127.099409008685",
+      "geohash": "wydmk",
+      "villas_item_count": 257,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48374146,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.36560682051230414
+        },
+        {
+          "item_id": 48409054,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.36560682051230414
+        }
+      ],
+      "nearest_distance_m": 0.36560682051230414,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 226,
+      "업소명": "망원루",
+      "주소": "서울특별시 마포구 월드컵로11길 72, 5층 502호 (망원동)",
+      "지번주소": "서울 마포구 망원동 413-50",
+      "latitude": "37.5538886806652",
+      "longitude": "126.907123511773",
+      "geohash": "wydjx",
+      "villas_item_count": 112,
+      "listing_exists": true,
+      "match_count": 3,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48309958,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.3406238624719874
+        },
+        {
+          "item_id": 48150365,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.3406238624719874
+        },
+        {
+          "item_id": 48150389,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.3406238624719874
+        }
+      ],
+      "nearest_distance_m": 0.3406238624719874,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 256,
+      "업소명": "코맘하우스",
+      "주소": "서울특별시 강남구 역삼로17길 35, 401호 (역삼동, 더클래스)",
+      "지번주소": "서울 강남구 역삼동 744-17",
+      "latitude": "37.4971520195133",
+      "longitude": "127.036486527622",
+      "geohash": "wydm6",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48200304,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.8090581311358086
+        },
+        {
+          "item_id": 48145582,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.8090581311358086
+        }
+      ],
+      "nearest_distance_m": 0.8090581311358086,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 262,
+      "업소명": "지제이(GJ)",
+      "주소": "서울특별시 강남구 역삼로5길 9-1, 401호 (역삼동)",
+      "지번주소": "서울 강남구 역삼동 830-18",
+      "latitude": "37.494353709182",
+      "longitude": "127.032009868573",
+      "geohash": "wydm6",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48378125,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 4.083462232245729
+        }
+      ],
+      "nearest_distance_m": 4.083462232245729,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 322,
+      "업소명": "Maison de Jann",
+      "주소": "서울특별시 광진구 자양로6길 50, B01호 (자양동)",
+      "지번주소": "서울 광진구 자양동 684-7",
+      "latitude": "37.5328404575542",
+      "longitude": "127.088510928675",
+      "geohash": "wydme",
+      "villas_item_count": 473,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48299727,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2833596230955981
+        }
+      ],
+      "nearest_distance_m": 1.2833596230955981,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 349,
+      "업소명": "flat home",
+      "주소": "서울특별시 도봉구 도봉로134길 22, 애스테이 101동 401호 (창동)",
+      "지번주소": "서울 도봉구 창동 731-123",
+      "latitude": "37.6571782584407",
+      "longitude": "127.041355504996",
+      "geohash": "wydq4",
+      "villas_item_count": 401,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48099126,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 37.07765947197076
+        }
+      ],
+      "nearest_distance_m": 37.07765947197076,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 370,
+      "업소명": "늘솜 스테이(서울)",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 102동 5층 501호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 373,
+      "업소명": "고요",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 102동 7층 704호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 378,
+      "업소명": "하루스테이",
+      "주소": "서울특별시 강서구 공항대로5길 34, 102호 (공항동)",
+      "지번주소": "서울 강서구 공항동 24-4",
+      "latitude": "37.561733670329",
+      "longitude": "126.812959852169",
+      "geohash": "wydjt",
+      "villas_item_count": 27,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48261590,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 3.4220354321090483
+        }
+      ],
+      "nearest_distance_m": 3.4220354321090483,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 401,
+      "업소명": "컴피화곡",
+      "주소": "서울특별시 강서구 화곡로33길 5-13, 202호 (화곡동)",
+      "지번주소": "서울 강서구 화곡동 111-50",
+      "latitude": "37.544518627606",
+      "longitude": "126.842773606613",
+      "geohash": "wydjw",
+      "villas_item_count": 265,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48348162,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.08483235545170918
+        }
+      ],
+      "nearest_distance_m": 0.08483235545170918,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 459,
+      "업소명": "사가정 모던하우스",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 102동 8층 802호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 492,
+      "업소명": "오드리하우스",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 102동 4층 404호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 517,
+      "업소명": "온기스테이",
+      "주소": "서울특별시 마포구 월드컵로11길 72, 5층 501호 (망원동)",
+      "지번주소": "서울 마포구 망원동 413-50",
+      "latitude": "37.5538886806652",
+      "longitude": "126.907123511773",
+      "geohash": "wydjx",
+      "villas_item_count": 112,
+      "listing_exists": true,
+      "match_count": 3,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48309958,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.3406238624719874
+        },
+        {
+          "item_id": 48150365,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.3406238624719874
+        },
+        {
+          "item_id": 48150389,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.3406238624719874
+        }
+      ],
+      "nearest_distance_m": 0.3406238624719874,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 565,
+      "업소명": "홍대R스테이",
+      "주소": "서울특별시 서대문구 연희로2길 65, 라포레 801호 (창천동)",
+      "지번주소": "서울 서대문구 창천동 372",
+      "latitude": "37.5588328214886",
+      "longitude": "126.927899088867",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "B"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48318677,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 1.4518295714831102
+        },
+        {
+          "item_id": 48384524,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 1.4518295714831102
+        }
+      ],
+      "nearest_distance_m": 1.4518295714831102,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 569,
+      "업소명": "스테이 서울바이브",
+      "주소": "서울특별시 마포구 월드컵로11길 72, 6층 601호 (망원동)",
+      "지번주소": "서울 마포구 망원동 413-50",
+      "latitude": "37.5538886806652",
+      "longitude": "126.907123511773",
+      "geohash": "wydjx",
+      "villas_item_count": 112,
+      "listing_exists": true,
+      "match_count": 3,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48309958,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.3406238624719874
+        },
+        {
+          "item_id": 48150365,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.3406238624719874
+        },
+        {
+          "item_id": 48150389,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.3406238624719874
+        }
+      ],
+      "nearest_distance_m": 0.3406238624719874,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 724,
+      "업소명": "레이크 게스트하우스",
+      "주소": "[138842] 서울특별시 송파구 삼학사로14길 24-1 (석촌동)",
+      "지번주소": "서울 송파구 석촌동 16-7",
+      "latitude": "37.5034078190252",
+      "longitude": "127.099839815884",
+      "geohash": "wydmk",
+      "villas_item_count": 257,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48255800,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.4170951424760285
+        }
+      ],
+      "nearest_distance_m": 0.4170951424760285,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 799,
+      "업소명": "My Holiday Seongsu",
+      "주소": "서울특별시 광진구 동일로10다길 13-5, 203호 (자양동, 엘케이플레이스8차)",
+      "지번주소": "서울 광진구 자양동 842-32",
+      "latitude": "37.5380458501784",
+      "longitude": "127.064528213994",
+      "geohash": "wydme",
+      "villas_item_count": 473,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세",
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48348607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        },
+        {
+          "item_id": 48380099,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        },
+        {
+          "item_id": 48414141,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        },
+        {
+          "item_id": 48414144,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        },
+        {
+          "item_id": 48402514,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        }
+      ],
+      "nearest_distance_m": 6.736805868738589,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 802,
+      "업소명": "CB 어반 스테이",
+      "주소": "서울특별시 광진구 동일로10다길 13-5, 202호 (자양동, 엘케이플레이스8차)",
+      "지번주소": "서울 광진구 자양동 842-32",
+      "latitude": "37.5380458501784",
+      "longitude": "127.064528213994",
+      "geohash": "wydme",
+      "villas_item_count": 473,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세",
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48348607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        },
+        {
+          "item_id": 48380099,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        },
+        {
+          "item_id": 48414141,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        },
+        {
+          "item_id": 48414144,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        },
+        {
+          "item_id": 48402514,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        }
+      ],
+      "nearest_distance_m": 6.736805868738589,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 806,
+      "업소명": "소소담",
+      "주소": "서울특별시 광진구 동일로10다길 13-5, 402호 (자양동, 엘케이플레이스8차)",
+      "지번주소": "서울 광진구 자양동 842-32",
+      "latitude": "37.5380458501784",
+      "longitude": "127.064528213994",
+      "geohash": "wydme",
+      "villas_item_count": 473,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세",
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48348607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        },
+        {
+          "item_id": 48380099,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        },
+        {
+          "item_id": 48414141,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        },
+        {
+          "item_id": 48414144,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        },
+        {
+          "item_id": 48402514,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.736805868738589
+        }
+      ],
+      "nearest_distance_m": 6.736805868738589,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 979,
+      "업소명": "윈드로드 앤 플라워 게스트하우스(Windroad & Flower Guesthouse",
+      "주소": "[110812] 서울특별시 종로구 창경궁로27길 66-12, 201호 (명륜3가)",
+      "지번주소": "서울 종로구 명륜3가 85-5",
+      "latitude": "37.5842525773128",
+      "longitude": "126.996502501917",
+      "geohash": "wydmc",
+      "villas_item_count": 32,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48390295,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.30315694539004
+        }
+      ],
+      "nearest_distance_m": 1.30315694539004,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1167,
+      "업소명": "서울 타이완 게스트하우스2",
+      "주소": "서울특별시 중구 퇴계로10길 20-14, 전층 (회현동1가)",
+      "지번주소": "서울 중구 회현동1가 88-3",
+      "latitude": "37.5581699356288",
+      "longitude": "126.980114491114",
+      "geohash": "wydm9",
+      "villas_item_count": 184,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48414183,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 7.294506684277494
+        }
+      ],
+      "nearest_distance_m": 7.294506684277494,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1198,
+      "업소명": "인터프렌즈",
+      "주소": "서울특별시 강남구 논현로121길 61, B102호 (논현동)",
+      "지번주소": "서울 강남구 논현동 172-1",
+      "latitude": "37.5082758403674",
+      "longitude": "127.028622297018",
+      "geohash": "wydm6",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 3,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48140322,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.1236628839708191
+        },
+        {
+          "item_id": 48093309,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.1236628839708191
+        },
+        {
+          "item_id": 48335521,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.1236628839708191
+        }
+      ],
+      "nearest_distance_m": 1.1236628839708191,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1245,
+      "업소명": "잠실 홈스테이",
+      "주소": "서울특별시 송파구 도곡로64길 32-1 (잠실동)",
+      "지번주소": "서울 송파구 잠실동 309-13",
+      "latitude": "37.5044031663142",
+      "longitude": "127.081390057602",
+      "geohash": "wydm7",
+      "villas_item_count": 188,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48276645,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.8392707109102159
+        }
+      ],
+      "nearest_distance_m": 0.8392707109102159,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1355,
+      "업소명": "게스트하우스 77",
+      "주소": "서울특별시 서대문구 연희로 44-35, 1층,2층 (연희동)",
+      "지번주소": "서울 서대문구 연희동 353-53",
+      "latitude": "37.5622886675451",
+      "longitude": "126.9284639407",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48350532,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 11.481009909356615
+        }
+      ],
+      "nearest_distance_m": 11.481009909356615,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1624,
+      "업소명": "스테이 노브(Stay NOV)",
+      "주소": "서울특별시 송파구 백제고분로46길 4-17, B03호 (송파동)",
+      "지번주소": "서울 송파구 송파동 133-14",
+      "latitude": "37.5079444926235",
+      "longitude": "127.111401330414",
+      "geohash": "wydmk",
+      "villas_item_count": 257,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48366938,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.9968555251628353
+        }
+      ],
+      "nearest_distance_m": 0.9968555251628353,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1659,
+      "업소명": "라포레 홍",
+      "주소": "서울특별시 서대문구 연희로2길 65, 라포레 701호 (창천동)",
+      "지번주소": "서울 서대문구 창천동 372",
+      "latitude": "37.5588328214886",
+      "longitude": "126.927899088867",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "B"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48318677,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 1.4518295714831102
+        },
+        {
+          "item_id": 48384524,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 1.4518295714831102
+        }
+      ],
+      "nearest_distance_m": 1.4518295714831102,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1671,
+      "업소명": "WOOSOO604",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 102동 604호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1708,
+      "업소명": "느리다",
+      "주소": "서울특별시 강동구 구천면로34길 52, 에덴빌32차 501호 (천호동)",
+      "지번주소": "서울 강동구 천호동 210-18",
+      "latitude": "37.5424180507441",
+      "longitude": "127.134138994152",
+      "geohash": "wydmt",
+      "villas_item_count": 161,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48393075,
+          "sales_type": "전세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 10.061162994427297
+        }
+      ],
+      "nearest_distance_m": 10.061162994427297,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1751,
+      "업소명": "미까사",
+      "주소": "서울특별시 송파구 삼학사로8길 23, 203호 (석촌동)",
+      "지번주소": "서울 송파구 석촌동 230-18",
+      "latitude": "37.5003147602102",
+      "longitude": "127.099409008685",
+      "geohash": "wydmk",
+      "villas_item_count": 257,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48374146,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.36560682051230414
+        },
+        {
+          "item_id": 48409054,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.36560682051230414
+        }
+      ],
+      "nearest_distance_m": 0.36560682051230414,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1763,
+      "업소명": "안느스테이",
+      "주소": "서울특별시 강남구 봉은사로13길 22, B02호 (논현동, 금화빌라)",
+      "지번주소": "서울 강남구 논현동 189-3",
+      "latitude": "37.5075170735208",
+      "longitude": "127.029838408101",
+      "geohash": "wydm6",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48287689,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 2.175468711465008
+        }
+      ],
+      "nearest_distance_m": 2.175468711465008,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1794,
+      "업소명": "빌라 드 사가",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 101동 501호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1798,
+      "업소명": "고요리 스테이(Goyori Stay)",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 102동 602호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1799,
+      "업소명": "스테이 숨",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 102동 502호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1801,
+      "업소명": "끌림스테이",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 101동 603호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1814,
+      "업소명": "룸메이트 스칼렛 603(Scarlet Room Mate 603)",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 102동 603호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1819,
+      "업소명": "Blanc suite(블랑스위트)",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 101동 504호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1822,
+      "업소명": "SHIM STAY",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 101동 601호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1824,
+      "업소명": "사가하우스",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 101동 404호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1825,
+      "업소명": "에피소드 23",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 102동 402호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1826,
+      "업소명": "NEST9",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 102동 801호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1832,
+      "업소명": "Haven in Seoul",
+      "주소": "서울특별시 중랑구 사가정로52길 37, 102동 504호 (면목동, ES팰리스)",
+      "지번주소": "서울 중랑구 면목동 633-3",
+      "latitude": "37.5792633606926",
+      "longitude": "127.086430724581",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 5,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48165002,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48084539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 47949741,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48347607,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        },
+        {
+          "item_id": 48391367,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 20.20839216111223
+        }
+      ],
+      "nearest_distance_m": 20.20839216111223,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1893,
+      "업소명": "미소 하우스",
+      "주소": "서울특별시 송파구 백제고분로46길 4-17, B02호 (송파동)",
+      "지번주소": "서울 송파구 송파동 133-14",
+      "latitude": "37.5079444926235",
+      "longitude": "127.111401330414",
+      "geohash": "wydmk",
+      "villas_item_count": 257,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48366938,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.9968555251628353
+        }
+      ],
+      "nearest_distance_m": 0.9968555251628353,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1952,
+      "업소명": "성수 포레스트 로프트",
+      "주소": "서울특별시 성동구 왕십리로16가길 10-7, 2층 (성수동1가)",
+      "지번주소": "서울 성동구 성수동1가 656-1140",
+      "latitude": "37.5503434512131",
+      "longitude": "127.045011066806",
+      "geohash": "wydmd",
+      "villas_item_count": 103,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48298038,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 2.0286475905411203
+        }
+      ],
+      "nearest_distance_m": 2.0286475905411203,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1972,
+      "업소명": "아라 하우스",
+      "주소": "서울특별시 종로구 성균관로17길 33, 202호 (명륜1가, 방산아파트)",
+      "지번주소": "서울 종로구 명륜1가 5-89",
+      "latitude": "37.5905176461951",
+      "longitude": "126.997081588465",
+      "geohash": "wydmc",
+      "villas_item_count": 32,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48386080,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.9415470478303376
+        }
+      ],
+      "nearest_distance_m": 0.9415470478303376,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 1983,
+      "업소명": "파크스테이",
+      "주소": "서울특별시 광진구 능동로32길 82-14, 103호 (능동)",
+      "지번주소": "서울 광진구 능동 240-17",
+      "latitude": "37.5536168080791",
+      "longitude": "127.082369735894",
+      "geohash": "wydme",
+      "villas_item_count": 473,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48398555,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.5358444046227331
+        }
+      ],
+      "nearest_distance_m": 0.5358444046227331,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2002,
+      "업소명": "온담",
+      "주소": "서울특별시 강서구 강서로26길 50, 가동 비02호 (화곡동, 까치맨션)",
+      "지번주소": "서울 강서구 화곡동 98-135",
+      "latitude": "37.5400483555986",
+      "longitude": "126.84497968727",
+      "geohash": "wydjw",
+      "villas_item_count": 265,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48327415,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 4.984145245845997
+        }
+      ],
+      "nearest_distance_m": 4.984145245845997,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2007,
+      "업소명": "온유",
+      "주소": "서울특별시 강서구 공항대로5길 34, 201호 (공항동)",
+      "지번주소": "서울 강서구 공항동 24-4",
+      "latitude": "37.561733670329",
+      "longitude": "126.812959852169",
+      "geohash": "wydjt",
+      "villas_item_count": 27,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48261590,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 3.4220354321090483
+        }
+      ],
+      "nearest_distance_m": 3.4220354321090483,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2038,
+      "업소명": "더서울",
+      "주소": "서울특별시 관악구 신림동1길 20-6, A동 903호 (신림동)",
+      "지번주소": "서울 관악구 신림동 1432-178",
+      "latitude": "37.4864955405369",
+      "longitude": "126.928002474243",
+      "geohash": "wydm2",
+      "villas_item_count": 179,
+      "listing_exists": true,
+      "match_count": 3,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48325167,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2379158023384895
+        },
+        {
+          "item_id": 48270232,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2379158023384895
+        },
+        {
+          "item_id": 48395193,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2379158023384895
+        }
+      ],
+      "nearest_distance_m": 1.2379158023384895,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2229,
+      "업소명": "더밤스테이 강남",
+      "주소": "서울특별시 강남구 강남대로94길 51-4, 401호 (역삼동)",
+      "지번주소": "서울 강남구 역삼동 636-24",
+      "latitude": "37.50066812943",
+      "longitude": "127.031387851319",
+      "geohash": "wydm6",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 3,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48199471,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 2.9263583589176747
+        },
+        {
+          "item_id": 48359527,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 2.9263583589176747
+        },
+        {
+          "item_id": 48392151,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 2.9263583589176747
+        }
+      ],
+      "nearest_distance_m": 2.9263583589176747,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2233,
+      "업소명": "웰컴서울",
+      "주소": "서울특별시 강남구 논현로114길 8, 401호 (논현동)",
+      "지번주소": "서울 강남구 논현동 234-1",
+      "latitude": "37.5085098262798",
+      "longitude": "127.034073472217",
+      "geohash": "wydm6",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48408695,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.0497383719041902
+        },
+        {
+          "item_id": 48405179,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.0497383719041902
+        }
+      ],
+      "nearest_distance_m": 1.0497383719041902,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2269,
+      "업소명": "스테이 수",
+      "주소": "서울특별시 강남구 언주로93길 22-2, 401호 (역삼동)",
+      "지번주소": "서울 강남구 역삼동 673-35",
+      "latitude": "37.5035487814011",
+      "longitude": "127.040160137479",
+      "geohash": "wydm6",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48347343,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.8271789387503315
+        }
+      ],
+      "nearest_distance_m": 0.8271789387503315,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2272,
+      "업소명": "클로버스테이",
+      "주소": "서울특별시 강남구 논현로115길 54, 301호 (논현동)",
+      "지번주소": "서울 강남구 논현동 172",
+      "latitude": "37.5081059042069",
+      "longitude": "127.028649715882",
+      "geohash": "wydm6",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 3,
+      "match_levels": [
+        "B"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48140322,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 19.989162481280673
+        },
+        {
+          "item_id": 48093309,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 19.989162481280673
+        },
+        {
+          "item_id": 48335521,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 19.989162481280673
+        }
+      ],
+      "nearest_distance_m": 19.989162481280673,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2307,
+      "업소명": "Dana Stay",
+      "주소": "서울특별시 강서구 화곡로35길 23-44, 101호 (화곡동, 강서미리네)",
+      "지번주소": "서울 강서구 화곡동 111-141",
+      "latitude": "37.5456463825682",
+      "longitude": "126.842282167379",
+      "geohash": "wydjw",
+      "villas_item_count": 265,
+      "listing_exists": true,
+      "match_count": 3,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48280601,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 2.67652179721394
+        },
+        {
+          "item_id": 48275948,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 2.67652179721394
+        },
+        {
+          "item_id": 48352323,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 2.67652179721394
+        }
+      ],
+      "nearest_distance_m": 2.67652179721394,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2326,
+      "업소명": "가온재",
+      "주소": "서울특별시 강남구 역삼로67길 15, 6층 (대치동, 케희빌딩)",
+      "지번주소": "서울 강남구 대치동 900-16",
+      "latitude": "37.5023734879027",
+      "longitude": "127.052808868329",
+      "geohash": "wydm7",
+      "villas_item_count": 188,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48135943,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.3232350981087528
+        }
+      ],
+      "nearest_distance_m": 1.3232350981087528,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2383,
+      "업소명": "Pea:pl Huam",
+      "주소": "서울특별시 용산구 두텁바위로69길 15-8, 3층 1호 (후암동)",
+      "지번주소": "서울 용산구 후암동 46-4",
+      "latitude": "37.550875668822",
+      "longitude": "126.980299193016",
+      "geohash": "wydm9",
+      "villas_item_count": 184,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48377196,
+          "sales_type": "전세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 11.927205721511655
+        }
+      ],
+      "nearest_distance_m": 11.927205721511655,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2426,
+      "업소명": "오월의 고덕",
+      "주소": "서울특별시 강동구 동남로87길 43, 402호 (고덕동, 누리안 파크리움Ⅲ)",
+      "지번주소": "서울 강동구 고덕동 534",
+      "latitude": "37.5617552265432",
+      "longitude": "127.154302312107",
+      "geohash": "wydmt",
+      "villas_item_count": 161,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "B"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48394424,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 0.8230391068763934
+        }
+      ],
+      "nearest_distance_m": 0.8230391068763934,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2697,
+      "업소명": "도로시 스테이",
+      "주소": "서울특별시 강동구 아리수로62길 9, 202호 (고덕동, 누리안파크리움Ⅳ)",
+      "지번주소": "서울 강동구 고덕동 629",
+      "latitude": "37.5614577303091",
+      "longitude": "127.152280148708",
+      "geohash": "wydmt",
+      "villas_item_count": 161,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "B"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48137761,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 1.7146050081561666
+        }
+      ],
+      "nearest_distance_m": 1.7146050081561666,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2767,
+      "업소명": "신림역별빛거리 하우스",
+      "주소": "서울특별시 관악구 신림동1길 20-6, A동 902호 (신림동)",
+      "지번주소": "서울 관악구 신림동 1432-178",
+      "latitude": "37.4864955405369",
+      "longitude": "126.928002474243",
+      "geohash": "wydm2",
+      "villas_item_count": 179,
+      "listing_exists": true,
+      "match_count": 3,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48325167,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2379158023384895
+        },
+        {
+          "item_id": 48270232,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2379158023384895
+        },
+        {
+          "item_id": 48395193,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2379158023384895
+        }
+      ],
+      "nearest_distance_m": 1.2379158023384895,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2865,
+      "업소명": "부자",
+      "주소": "서울특별시 노원구 덕릉로90길 5, 703호 (중계동, 중계쉐르빌)",
+      "지번주소": "서울 노원구 중계동 134-2",
+      "latitude": "37.6606853208982",
+      "longitude": "127.075975441144",
+      "geohash": "wydq5",
+      "villas_item_count": 38,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48374298,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 3.424367789794052
+        }
+      ],
+      "nearest_distance_m": 3.424367789794052,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 2965,
+      "업소명": "알레드반포",
+      "주소": "서울특별시 서초구 주흥길 47, B01호 (반포동)",
+      "지번주소": "서울 서초구 반포동 716-25",
+      "latitude": "37.5070959726543",
+      "longitude": "127.019847636632",
+      "geohash": "wydm6",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48093100,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.9353034429271155
+        }
+      ],
+      "nearest_distance_m": 0.9353034429271155,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3037,
+      "업소명": "라포레 홍대 Lapore Hongdae",
+      "주소": "서울특별시 서대문구 연희로2길 65, 라포레 803호 (창천동)",
+      "지번주소": "서울 서대문구 창천동 372",
+      "latitude": "37.5588328214886",
+      "longitude": "126.927899088867",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "B"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48318677,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 1.4518295714831102
+        },
+        {
+          "item_id": 48384524,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 1.4518295714831102
+        }
+      ],
+      "nearest_distance_m": 1.4518295714831102,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3115,
+      "업소명": "조로하우스",
+      "주소": "서울특별시 관악구 신림동1길 20-6, 제에이동 1002호 (신림동)",
+      "지번주소": "서울 관악구 신림동 1432-178",
+      "latitude": "37.4864955405369",
+      "longitude": "126.928002474243",
+      "geohash": "wydm2",
+      "villas_item_count": 179,
+      "listing_exists": true,
+      "match_count": 3,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48325167,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2379158023384895
+        },
+        {
+          "item_id": 48270232,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2379158023384895
+        },
+        {
+          "item_id": 48395193,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2379158023384895
+        }
+      ],
+      "nearest_distance_m": 1.2379158023384895,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3126,
+      "업소명": "Nuaz11",
+      "주소": "서울특별시 관악구 신림동1길 20-6, 도라샘타워 제에이동 제9,10,11층 제다가구주택호 11층 1102호 (신림동)",
+      "지번주소": "서울 관악구 신림동 1432-178",
+      "latitude": "37.4864955405369",
+      "longitude": "126.928002474243",
+      "geohash": "wydm2",
+      "villas_item_count": 179,
+      "listing_exists": true,
+      "match_count": 3,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48325167,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2379158023384895
+        },
+        {
+          "item_id": 48270232,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2379158023384895
+        },
+        {
+          "item_id": 48395193,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2379158023384895
+        }
+      ],
+      "nearest_distance_m": 1.2379158023384895,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3137,
+      "업소명": "박씨집안",
+      "주소": "서울특별시 노원구 덕릉로90길 5, 402호 (중계동, 중계쉐르빌)",
+      "지번주소": "서울 노원구 중계동 134-2",
+      "latitude": "37.6606853208982",
+      "longitude": "127.075975441144",
+      "geohash": "wydq5",
+      "villas_item_count": 38,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48374298,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 3.424367789794052
+        }
+      ],
+      "nearest_distance_m": 3.424367789794052,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3197,
+      "업소명": "mmmory",
+      "주소": "서울특별시 서대문구 연희로2길 65, 라포레 603호 (창천동)",
+      "지번주소": "서울 서대문구 창천동 372",
+      "latitude": "37.5588328214886",
+      "longitude": "126.927899088867",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "B"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48318677,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 1.4518295714831102
+        },
+        {
+          "item_id": 48384524,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 1.4518295714831102
+        }
+      ],
+      "nearest_distance_m": 1.4518295714831102,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3200,
+      "업소명": "중구 마루",
+      "주소": "서울특별시 중구 동호로25가길 21-2, 101호 (장충동2가, 우원빌라)",
+      "지번주소": "서울 중구 장충동2가 193-120",
+      "latitude": "37.5585389385803",
+      "longitude": "127.001390278978",
+      "geohash": "wydm9",
+      "villas_item_count": 184,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48320333,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.4453933777477268
+        }
+      ],
+      "nearest_distance_m": 0.4453933777477268,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3291,
+      "업소명": "원더 서울",
+      "주소": "서울특별시 중랑구 봉우재로71길 73-5, 201호 (망우동)",
+      "지번주소": "서울 중랑구 망우동 512-28",
+      "latitude": "37.5968189891748",
+      "longitude": "127.096025579379",
+      "geohash": "wydmu",
+      "villas_item_count": 150,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48084568,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 6.241765014076758
+        }
+      ],
+      "nearest_distance_m": 6.241765014076758,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3300,
+      "업소명": "하이드아웃",
+      "주소": "서울특별시 마포구 와우산로3안길 6, 1층 202호 (상수동)",
+      "지번주소": "서울 마포구 상수동 333-26",
+      "latitude": "37.5464963616801",
+      "longitude": "126.92249933123",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48210502,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 10.704558930453524
+        }
+      ],
+      "nearest_distance_m": 10.704558930453524,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3413,
+      "업소명": "빌라드 성수",
+      "주소": "서울특별시 성동구 서울숲4길 28-9, 지하1층 02호 (성수동1가)",
+      "지번주소": "서울 성동구 성수동1가 668-33",
+      "latitude": "37.5467672464759",
+      "longitude": "127.043950755152",
+      "geohash": "wydmd",
+      "villas_item_count": 103,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48402511,
+          "sales_type": "전세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 10.804651955739217
+        }
+      ],
+      "nearest_distance_m": 10.804651955739217,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3415,
+      "업소명": "still stay",
+      "주소": "서울특별시 관악구 봉천로53길 4-19 (봉천동)",
+      "지번주소": "서울 관악구 봉천동 1667-28",
+      "latitude": "37.4818627960732",
+      "longitude": "126.954838404018",
+      "geohash": "wydm0",
+      "villas_item_count": 186,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48217240,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 8.413159172638085
+        }
+      ],
+      "nearest_distance_m": 8.413159172638085,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3467,
+      "업소명": "다올(DAOL STAY)",
+      "주소": "서울특별시 관악구 신림로66길 41, 802호 (신림동)",
+      "지번주소": "서울 관악구 신림동 1420-6",
+      "latitude": "37.4858390715086",
+      "longitude": "126.931964676509",
+      "geohash": "wydm2",
+      "villas_item_count": 179,
+      "listing_exists": true,
+      "match_count": 4,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48345615,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.8094492619465726
+        },
+        {
+          "item_id": 48340668,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.8094492619465726
+        },
+        {
+          "item_id": 48371163,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.8094492619465726
+        },
+        {
+          "item_id": 48361539,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.8094492619465726
+        }
+      ],
+      "nearest_distance_m": 0.8094492619465726,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3507,
+      "업소명": "Joeng Stay",
+      "주소": "서울특별시 광진구 자양번영로1길 31-10, 스튜디오 안 501호 (자양동)",
+      "지번주소": "서울 광진구 자양동 588-4",
+      "latitude": "37.5306312546749",
+      "longitude": "127.072582527568",
+      "geohash": "wydme",
+      "villas_item_count": 473,
+      "listing_exists": true,
+      "match_count": 3,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48215786,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 11.874194532236874
+        },
+        {
+          "item_id": 48339829,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 11.874194532236874
+        },
+        {
+          "item_id": 48315529,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 11.874194532236874
+        }
+      ],
+      "nearest_distance_m": 11.874194532236874,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3509,
+      "업소명": "슈퍼스타 Superstar",
+      "주소": "서울특별시 관악구 인헌12나길 7, 301호 (봉천동, 하나빌라)",
+      "지번주소": "서울 관악구 봉천동 180-75",
+      "latitude": "37.4713881560756",
+      "longitude": "126.9663244652",
+      "geohash": "wydm1",
+      "villas_item_count": 116,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48380057,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2028205077165384
+        },
+        {
+          "item_id": 48347920,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2028205077165384
+        }
+      ],
+      "nearest_distance_m": 1.2028205077165384,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3531,
+      "업소명": "Dear You Stay",
+      "주소": "서울특별시 마포구 월드컵북로12길 82, 2층 202호 (성산동)",
+      "지번주소": "서울 마포구 성산동 21-16",
+      "latitude": "37.5647103400384",
+      "longitude": "126.915223799364",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48224126,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.6857023949219965
+        }
+      ],
+      "nearest_distance_m": 1.6857023949219965,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3568,
+      "업소명": "Elaine's healing stay",
+      "주소": "서울특별시 관악구 남부순환로161나길 48, b02호 (신림동)",
+      "지번주소": "서울 관악구 신림동 467-21",
+      "latitude": "37.4856244081741",
+      "longitude": "126.921438360479",
+      "geohash": "wydm2",
+      "villas_item_count": 179,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48397265,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.9336820318012476
+        }
+      ],
+      "nearest_distance_m": 0.9336820318012476,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3590,
+      "업소명": "스테이리움",
+      "주소": "서울특별시 관악구 남부순환로164길 46, 302호 (신림동, 휴스테이)",
+      "지번주소": "서울 관악구 신림동 440-61",
+      "latitude": "37.4805880740725",
+      "longitude": "126.923132415741",
+      "geohash": "wydm0",
+      "villas_item_count": 186,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48155715,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 2.16274785174492
+        },
+        {
+          "item_id": 48164019,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 2.16274785174492
+        }
+      ],
+      "nearest_distance_m": 2.16274785174492,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3611,
+      "업소명": "성수하임",
+      "주소": "서울특별시 성동구 연무장1길 8-13, 지하층 101호 (성수동2가)",
+      "지번주소": "서울 성동구 성수동2가 301-27",
+      "latitude": "37.5444511357723",
+      "longitude": "127.050701230813",
+      "geohash": "wydme",
+      "villas_item_count": 473,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48388868,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 21.945674792522336
+        }
+      ],
+      "nearest_distance_m": 21.945674792522336,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3636,
+      "업소명": "달래하우스",
+      "주소": "서울특별시 성동구 연무장1길 12, 2층 201호 (성수동2가)",
+      "지번주소": "서울 성동구 성수동2가 301-27",
+      "latitude": "37.5445740449995",
+      "longitude": "127.050671101157",
+      "geohash": "wydme",
+      "villas_item_count": 473,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48388868,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 14.436110283338945
+        }
+      ],
+      "nearest_distance_m": 14.436110283338945,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3645,
+      "업소명": "레몬힐 스테이(Lemonhill Stay)",
+      "주소": "서울특별시 광진구 아차산로27길 24-3, 2층 (화양동)",
+      "지번주소": "서울 광진구 화양동 47-29",
+      "latitude": "37.5426049781932",
+      "longitude": "127.068251738935",
+      "geohash": "wydme",
+      "villas_item_count": 473,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48277490,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 9.728492275660336
+        }
+      ],
+      "nearest_distance_m": 9.728492275660336,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3683,
+      "업소명": "서울 타이완 게스트하우스2",
+      "주소": "서울특별시 중구 퇴계로10길 20-14, 전층 (회현동1가)",
+      "지번주소": "서울 중구 회현동1가 88-3",
+      "latitude": "37.5581699356288",
+      "longitude": "126.980114491114",
+      "geohash": "wydm9",
+      "villas_item_count": 184,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48414183,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 7.294506684277494
+        }
+      ],
+      "nearest_distance_m": 7.294506684277494,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3688,
+      "업소명": "Wooseung Stay",
+      "주소": "서울특별시 성동구 연무장1길 8-13, 지하1층 102호 (성수동2가)",
+      "지번주소": "서울 성동구 성수동2가 301-27",
+      "latitude": "37.5444511357723",
+      "longitude": "127.050701230813",
+      "geohash": "wydme",
+      "villas_item_count": 473,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48388868,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 21.945674792522336
+        }
+      ],
+      "nearest_distance_m": 21.945674792522336,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3707,
+      "업소명": "정감",
+      "주소": "서울특별시 성동구 왕십리로21다길 6, 3층 (행당동)",
+      "지번주소": "서울 성동구 행당동 297-4",
+      "latitude": "37.5598843534721",
+      "longitude": "127.031816501701",
+      "geohash": "wydmd",
+      "villas_item_count": 103,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48320977,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 11.724443506615653
+        },
+        {
+          "item_id": 48274113,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 11.724443506615653
+        }
+      ],
+      "nearest_distance_m": 11.724443506615653,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 3891,
+      "업소명": "라벨라 하우스",
+      "주소": "서울특별시 서대문구 연희로2길 65, 라포레 804호 (창천동)",
+      "지번주소": "서울 서대문구 창천동 372",
+      "latitude": "37.5588328214886",
+      "longitude": "126.927899088867",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "B"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48318677,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 1.4518295714831102
+        },
+        {
+          "item_id": 48384524,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 1.4518295714831102
+        }
+      ],
+      "nearest_distance_m": 1.4518295714831102,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4044,
+      "업소명": "그린 올리브 스테이",
+      "주소": "서울특별시 마포구 월드컵북로12길 82, 2층 201호 (성산동)",
+      "지번주소": "서울 마포구 성산동 21-16",
+      "latitude": "37.5647103400384",
+      "longitude": "126.915223799364",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48224126,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.6857023949219965
+        }
+      ],
+      "nearest_distance_m": 1.6857023949219965,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4120,
+      "업소명": "정호하우스",
+      "주소": "서울특별시 강남구 강남대로128길 64-2, 201호 (논현동)",
+      "지번주소": "서울 강남구 논현동 136-28",
+      "latitude": "37.5118410474878",
+      "longitude": "127.026600165554",
+      "geohash": "wydm6",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48393622,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 11.00477088096524
+        }
+      ],
+      "nearest_distance_m": 11.00477088096524,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4122,
+      "업소명": "창범하우스",
+      "주소": "서울특별시 강남구 언주로138길 18, 302호 (논현동)",
+      "지번주소": "서울 강남구 논현동 107-27",
+      "latitude": "37.5179697010756",
+      "longitude": "127.036896189507",
+      "geohash": "wydm6",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48248224,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 2.2524077267857683
+        },
+        {
+          "item_id": 48368937,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 2.2524077267857683
+        }
+      ],
+      "nearest_distance_m": 2.2524077267857683,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4300,
+      "업소명": "비스타스테이",
+      "주소": "서울특별시 마포구 월드컵북로8길 37, 5층 501호 (연남동, 골든빌)",
+      "지번주소": "서울 마포구 연남동 487-127",
+      "latitude": "37.5601636525078",
+      "longitude": "126.9185664166",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48309552,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.6754780488739192
+        }
+      ],
+      "nearest_distance_m": 1.6754780488739192,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4319,
+      "업소명": "Sunny House 101",
+      "주소": "서울특별시 마포구 연남로1길 24-12, 지층 101호 (연남동)",
+      "지번주소": "서울 마포구 연남동 566-20",
+      "latitude": "37.5608255935246",
+      "longitude": "126.921460991216",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48328889,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 11.341479099807831
+        }
+      ],
+      "nearest_distance_m": 11.341479099807831,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4324,
+      "업소명": "Sunny House 202",
+      "주소": "서울특별시 마포구 연남로1길 24-12, 1층 202호 (연남동)",
+      "지번주소": "서울 마포구 연남동 566-20",
+      "latitude": "37.5608255935246",
+      "longitude": "126.921460991216",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48328889,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 11.341479099807831
+        }
+      ],
+      "nearest_distance_m": 11.341479099807831,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4327,
+      "업소명": "Sunny House",
+      "주소": "서울특별시 마포구 연남로1길 24-12, 지층 102호 (연남동)",
+      "지번주소": "서울 마포구 연남동 566-20",
+      "latitude": "37.5608255935246",
+      "longitude": "126.921460991216",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48328889,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 11.341479099807831
+        }
+      ],
+      "nearest_distance_m": 11.341479099807831,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4343,
+      "업소명": "레이크 게스트하우스",
+      "주소": "서울특별시 송파구 삼학사로14길 24-1 (석촌동)",
+      "지번주소": "서울 송파구 석촌동 16-7",
+      "latitude": "37.5034078190252",
+      "longitude": "127.099839815884",
+      "geohash": "wydmk",
+      "villas_item_count": 257,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48255800,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 0.4170951424760285
+        }
+      ],
+      "nearest_distance_m": 0.4170951424760285,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4504,
+      "업소명": "휴 하우스 (Hue house)",
+      "주소": "서울특별시 구로구 경인로47길 44-12 (고척동)",
+      "지번주소": "서울 구로구 고척동 52-212",
+      "latitude": "37.5011399791314",
+      "longitude": "126.866090837183",
+      "geohash": "wydjq",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48226794,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 7.476491497642165
+        }
+      ],
+      "nearest_distance_m": 7.476491497642165,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4551,
+      "업소명": "석계역 화이트 스테이",
+      "주소": "서울특별시 성북구 한천로76나길 18-11 (석관동)",
+      "지번주소": "서울 성북구 석관동 118-10",
+      "latitude": "37.6116865867101",
+      "longitude": "127.065956553045",
+      "geohash": "wydmg",
+      "villas_item_count": 486,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48336032,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 10.860066627040096
+        }
+      ],
+      "nearest_distance_m": 10.860066627040096,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4561,
+      "업소명": "휴플랜 게스트하우스",
+      "주소": "서울특별시 도봉구 우이천로22길 16-13, 702호 (창동, The H 2차)",
+      "지번주소": "서울 도봉구 창동 635-31",
+      "latitude": "37.6419056685929",
+      "longitude": "127.034415528151",
+      "geohash": "wydq4",
+      "villas_item_count": 401,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48337046,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 7.346198958716666
+        }
+      ],
+      "nearest_distance_m": 7.346198958716666,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4579,
+      "업소명": "모노홈2",
+      "주소": "서울특별시 마포구 와우산로24길 17, 303호 (창전동)",
+      "지번주소": "서울 마포구 창전동 436-1",
+      "latitude": "37.5526661356599",
+      "longitude": "126.925879302622",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48244236,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 3.3437212793587787
+        }
+      ],
+      "nearest_distance_m": 3.3437212793587787,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4919,
+      "업소명": "K1 HOUSE",
+      "주소": "서울특별시 마포구 동교로50길 30, 104호 (연남동, 화랑빌라)",
+      "지번주소": "서울 마포구 연남동 226-33",
+      "latitude": "37.5628763276797",
+      "longitude": "126.927479804866",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48343692,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 17.40835619682357
+        }
+      ],
+      "nearest_distance_m": 17.40835619682357,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 4940,
+      "업소명": "동화 STAY",
+      "주소": "서울특별시 서대문구 거북골로22길 39-3, 지하1층 01호 (북가좌동, 동화주택)",
+      "지번주소": "서울 서대문구 북가좌동 320-16",
+      "latitude": "37.580520272933",
+      "longitude": "126.909164130668",
+      "geohash": "wydjz",
+      "villas_item_count": 182,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48411571,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 10.887117427408201
+        }
+      ],
+      "nearest_distance_m": 10.887117427408201,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5022,
+      "업소명": "서울 타이완 게스트하우스",
+      "주소": "서울특별시 중구 퇴계로10길 20-14 (회현동1가)",
+      "지번주소": "서울 중구 회현동1가 88-3",
+      "latitude": "37.5581699356288",
+      "longitude": "126.980114491114",
+      "geohash": "wydm9",
+      "villas_item_count": 184,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48414183,
+          "sales_type": "전세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 7.294506684277494
+        }
+      ],
+      "nearest_distance_m": 7.294506684277494,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5225,
+      "업소명": "연남동 해피하우스",
+      "주소": "서울특별시 마포구 동교로50길 30, 103호 (연남동, 화랑빌라)",
+      "지번주소": "서울 마포구 연남동 226-33",
+      "latitude": "37.5628763276797",
+      "longitude": "126.927479804866",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48343692,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 17.40835619682357
+        }
+      ],
+      "nearest_distance_m": 17.40835619682357,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5349,
+      "업소명": "온 스테이",
+      "주소": "서울특별시 마포구 와우산로3안길 6, 201호 (상수동)",
+      "지번주소": "서울 마포구 상수동 333-26",
+      "latitude": "37.5464963616801",
+      "longitude": "126.92249933123",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48210502,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 10.704558930453524
+        }
+      ],
+      "nearest_distance_m": 10.704558930453524,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5353,
+      "업소명": "은율하우스",
+      "주소": "서울특별시 강서구 까치산로22길 21-1, 은율하우스 203호 (화곡동)",
+      "지번주소": "서울 강서구 화곡동 958-3",
+      "latitude": "37.5488095881065",
+      "longitude": "126.852156235864",
+      "geohash": "wydjw",
+      "villas_item_count": 265,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48157555,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.1775198136258835
+        }
+      ],
+      "nearest_distance_m": 1.1775198136258835,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5375,
+      "업소명": "게스트하우스 77",
+      "주소": "서울특별시 서대문구 연희로 44-35, 1층,2층 (연희동)",
+      "지번주소": "서울 서대문구 연희동 353-53",
+      "latitude": "37.5622886675451",
+      "longitude": "126.9284639407",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48350532,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 11.481009909356615
+        }
+      ],
+      "nearest_distance_m": 11.481009909356615,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5392,
+      "업소명": "스테이 상수",
+      "주소": "서울특별시 마포구 와우산로3안길 6, 지층 101호 (상수동)",
+      "지번주소": "서울 마포구 상수동 333-26",
+      "latitude": "37.5464963616801",
+      "longitude": "126.92249933123",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48210502,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 10.704558930453524
+        }
+      ],
+      "nearest_distance_m": 10.704558930453524,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5551,
+      "업소명": "A stay",
+      "주소": "서울특별시 강동구 풍성로57길 24, 리딩타워 5층 501호 (성내동)",
+      "지번주소": "서울 강동구 성내동 415",
+      "latitude": "37.5299863614538",
+      "longitude": "127.136387456804",
+      "geohash": "wydmt",
+      "villas_item_count": 161,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "B"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48396790,
+          "sales_type": "월세",
+          "match_level": "B",
+          "match_reason": "MAIN_NO_MATCH_WITH_DISTANCE_B",
+          "distance_m": 2.246114414147743
+        }
+      ],
+      "nearest_distance_m": 2.246114414147743,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5569,
+      "업소명": "SEOULYDAYS INN",
+      "주소": "서울특별시 용산구 신흥로7길 46-3, 객실:1개 3층 (용산동2가)",
+      "지번주소": "서울 용산구 용산동2가 32-3",
+      "latitude": "37.5436089794288",
+      "longitude": "126.985618393556",
+      "geohash": "wydm9",
+      "villas_item_count": 184,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48396562,
+          "sales_type": "전세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 9.34359892109861
+        }
+      ],
+      "nearest_distance_m": 9.34359892109861,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5607,
+      "업소명": "Sodam Stay",
+      "주소": "서울특별시 강동구 구천면로34길 52, 에덴빌32차 402호 (천호동)",
+      "지번주소": "서울 강동구 천호동 210-18",
+      "latitude": "37.5424180507441",
+      "longitude": "127.134138994152",
+      "geohash": "wydmt",
+      "villas_item_count": 161,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48393075,
+          "sales_type": "전세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 10.061162994427297
+        }
+      ],
+      "nearest_distance_m": 10.061162994427297,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5690,
+      "업소명": "더 존 스테이",
+      "주소": "서울특별시 강동구 진황도로27가길 6-7, 13층 1303호 (천호동)",
+      "지번주소": "서울 강동구 천호동 166-71",
+      "latitude": "37.5392040088603",
+      "longitude": "127.13133110813",
+      "geohash": "wydms",
+      "villas_item_count": 162,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48358935,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 3.6196748353870265
+        },
+        {
+          "item_id": 48233580,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 3.6196748353870265
+        }
+      ],
+      "nearest_distance_m": 3.6196748353870265,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5723,
+      "업소명": "우드세이지",
+      "주소": "서울특별시 강동구 구천면로34길 52, 에덴빌32차 301호 (천호동)",
+      "지번주소": "서울 강동구 천호동 210-18",
+      "latitude": "37.5424180507441",
+      "longitude": "127.134138994152",
+      "geohash": "wydmt",
+      "villas_item_count": 161,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48393075,
+          "sales_type": "전세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 10.061162994427297
+        }
+      ],
+      "nearest_distance_m": 10.061162994427297,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5772,
+      "업소명": "베라 하우스",
+      "주소": "서울특별시 강동구 구천면로34길 52, 에덴빌32차 4층 401호 (천호동)",
+      "지번주소": "서울 강동구 천호동 210-18",
+      "latitude": "37.5424180507441",
+      "longitude": "127.134138994152",
+      "geohash": "wydmt",
+      "villas_item_count": 161,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48393075,
+          "sales_type": "전세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 10.061162994427297
+        }
+      ],
+      "nearest_distance_m": 10.061162994427297,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5912,
+      "업소명": "해가인",
+      "주소": "서울특별시 성북구 동소문로25길 20-9, 201호 (동선동4가)",
+      "지번주소": "서울 성북구 동선동4가 220-1",
+      "latitude": "37.5955232419891",
+      "longitude": "127.018388639535",
+      "geohash": "wydmf",
+      "villas_item_count": 184,
+      "listing_exists": true,
+      "match_count": 2,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48308254,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 8.189028073838983
+        },
+        {
+          "item_id": 48196641,
+          "sales_type": "월세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 8.189028073838983
+        }
+      ],
+      "nearest_distance_m": 8.189028073838983,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 5977,
+      "업소명": "홍스 하우스",
+      "주소": "서울특별시 마포구 독막로19길 35, B01호 (상수동)",
+      "지번주소": "서울 마포구 상수동 93-25",
+      "latitude": "37.5487848539309",
+      "longitude": "126.924235941665",
+      "geohash": "wydm8",
+      "villas_item_count": 140,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48363089,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 1.2941111166849348
+        }
+      ],
+      "nearest_distance_m": 1.2941111166849348,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 6086,
+      "업소명": "블리크스틸(Blikstille)",
+      "주소": "서울특별시 용산구 백범로47나길 8, 201호 (효창동)",
+      "지번주소": "서울 용산구 효창동 5-516",
+      "latitude": "37.5420095161374",
+      "longitude": "126.959569399963",
+      "geohash": "wydm9",
+      "villas_item_count": 184,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "C"
+      ],
+      "matched_sales_types": [
+        "전세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 47863296,
+          "sales_type": "전세",
+          "match_level": "C",
+          "match_reason": "LOCAL_MATCH_WITH_DISTANCE_C",
+          "distance_m": 10.889457532260469
+        }
+      ],
+      "nearest_distance_m": 10.889457532260469,
+      "fallback_used": false,
+      "unmatched_code": ""
+    },
+    {
+      "row_index": 6395,
+      "업소명": "경리단집",
+      "주소": "서울특별시 용산구 회나무로28길 27 (이태원동)",
+      "지번주소": "서울 용산구 이태원동 210-23",
+      "latitude": "37.5395274871035",
+      "longitude": "126.99298361235",
+      "geohash": "wydm9",
+      "villas_item_count": 184,
+      "listing_exists": true,
+      "match_count": 1,
+      "match_levels": [
+        "A"
+      ],
+      "matched_sales_types": [
+        "월세"
+      ],
+      "matched_items": [
+        {
+          "item_id": 48355494,
+          "sales_type": "월세",
+          "match_level": "A",
+          "match_reason": "FULL_JIBUN_MATCH",
+          "distance_m": 3.7400572928341074
+        }
+      ],
+      "nearest_distance_m": 3.7400572928341074,
+      "fallback_used": false,
+      "unmatched_code": ""
+    }
+  ]
+}
